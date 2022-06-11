@@ -1,0 +1,792 @@
+
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>cooking recipes</title>
+              
+       <link rel="stylesheet" href="all.css">  
+       <script src="all.js"></script>
+       <script src="https://kit.fontawesome.com/c1633bff86.js" crossorigin="anonymous"></script>
+       <link href="https://cdn.jsdelivr.net/.../dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+       <script src="https://cdn.jsdelivr.net/.../dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+       <script
+       src="https://code.jquery.com/jquery-3.6.0.js"
+       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+       crossorigin="anonymous"></script>
+              
+              <style>
+body {
+     padding: 0px;
+   
+    overflow: scroll;
+    overflow-x:hidden ;
+    background-image: url('img/fundo/janta/jata1.jpg');
+    background-repeat:repeat-y ;
+    background-size: 100%  ;
+    background-attachment: fixed;
+   
+    
+}  
+li, ol ,h1,h2{
+    text-shadow: 1px 1px 1px #000;
+}
+div{
+    display: inline;
+}
+
+       </style>
+   </head>
+   <body>
+    
+    
+    <header>
+        
+            
+         <img class="n4" src="img/log.jpg" >
+        
+        
+    
+    
+      
+    
+    
+       <nav id="menu">
+           <div id="div1">
+            
+               <a class="bitmenu1" href="index.html">inicio</a>
+           <a class="btmenu" href="cafe.html" target="">café </a>
+           <a class="btmenu" href="almoco.html">almoço</a>
+           <a class="btmenu" href="lanche.html">lanche</a>
+           <a class="btmenu" href="janta.html">jantar</a>
+           <a class="btmenu" href="saldavel.html">saldável</a>
+           
+           <marquee behavior="alternate" loop="3"><h1 style="color: chartreuse;">welcome cooking recipes !!!</h1></marquee>
+        
+        </div>
+ 
+  
+       <div class="pp">
+       
+    
+            
+        <nav class="menuc" id="nav">
+            
+            <input type="text" id="pes" onkeyup="pesquisar()"  placeholder="pesquisa..." title="digite">
+            
+            <ul id="menu" class="li">
+        
+                <input type="button" value="pesquisar" onclick="mostra('dess')" class="botao"/>
+                <div id="dess" style=" overflow-y: scroll;height: 200px; " >
+                
+                
+    
+    
+                <li><a href="cafe.html#queijo"target="_black">queijo</a></li>
+                <li><a href="#feijoada" target="_black">feijoada</a></li>
+                <li><a href="almoco.html#aroz" target="_black">Arroz de linguiça com milho</a></li>
+                <li><a href="cafe.html#nmalu"target="_black">bolo nega Maluca</a></li>
+                <li><a href="cafe.html#cap "target="_black">cappuccino</a></li>
+                <li><a href="cafe.html#pqueijo"target="_black">pao de queijo </a></li>
+                <li><a href="cafe.html#requeijão "target="_black">requeijão</a></li>
+                <li><a href="cafe.html#biscoitoa "target="_black">biscoito amanteigado</a></li>
+                <li><a href="cafe.html#pave"target="_black">PAVÊ DE PRESTÍGIO </a></li>
+                <li><a href="cafe.html#bolmilho"target="_black">bolinho-de-milho</a></li>
+                <li><a href="cafe.html#rosca"target="_black">ROSCA FOFINHA </a></li>
+                <li><a href="paginas-sec/kanabis.html#canabis"target="_black">manteiga canabica</a></li>
+                <li><a href="#picanha"target="_black">Picanha recheada  </a></li>
+                <li><a href="#Holandesa"target="_black">torta holadesa </a></li>
+                <li><a href="#panqueca"target="_black">panqueca</a></li>
+                <li><a href="#mqueijo"target="_black">macarao com queijo </a></li>
+                <li><a href="#Omuraisu"target="_black">Omuraisu </a></li>
+                <li><a href="#curyy"target="_black">curry</a></li>
+                <li><a href="#esrusso">estrogonofe </a></li>
+                <li><a href="#monsieur"target="_black"> monsieur</a></li>
+                <li><a  href="paginas-sec/bolo.html#rc"target="_black">rocabole</a></li>
+                <li><a href="cafe.html#tcok"target="_black">torta cookie</a></li>
+                
+                <li><a href="almoco.html#hd"target="_black">hot-dog-forno </a></li>
+                <li><a href="almoco.html#ome"target="_black">omelete-de-forno</a></li>
+                <li><a href="almoco.html#fj"target="_black">feijao tropeiro</a></li>
+                <li><a href="almoco.html#escamarao"target="_black">estrogonofe-de-camarao </a></li>
+                <li><a href="almoco.html#tport"target="_black">torta-portuguesa</a></li>
+                <li><a href="almoco.html#pvinho"target="_black">picanha ao vinho </a></li>
+                <li><a href="almoco.html#pf"target="_black">pastelao de forno</a></li>
+                <li><a href="almoco.html#mf"target="_black">macarao de Forno</a></li>
+                <li><a href="almoco.html#lbf"target="_black"> Lasanha de batata com frango </a></li>
+               
+                <li><a href="lanche.html#va"target="_black">vitamina de amedoim </a></li>
+                <li><a href="lanche.html#bpm"target="_black">bolo pe de moleque</a></li>
+                <li><a href="lanche.html#paor"target="_black">pao-recheado</a></li>
+                <li><a href="lanche.html#thd"target="_black">torta hot-dog</a></li>
+                <li><a href="lanche.html#ef"target="_black">empadao-frango</a></li>
+                <li><a href="lanche.html#pcl"target="_black">pao de cebola</a></li>
+                <li><a href="lanche.html#sf"target="_black">saduiche de forno</a></li>
+                <li><a href="lanche.html#jpz"target="_black">joelho de pizza</a></li>
+                <li><a href="lanche.html#bbt"target="_black">bombom-de-travessa</a></li>
+                <li><a href="lanche.html#bca"target="_black">bolo de amendoim</a></li>
+               
+                <li><a href="janta.html#lff"target="_black">lasanha-de-frango</a></li>
+                <li><a href="janta.html#pcm"target="_black">PANQUECA de carne moida</a></li>
+                <li><a href="janta.html#ps"target="_black">Pizza-de-Sardinha</a></li>
+                <li><a href="janta.html#mqf"target="_black">misto quente</a></li>
+                <li><a href="janta.html#mlc"target="_black">MACARRÃO COM LINGUIÇA CALABRESA </a></li>
+                <li><a href="janta.html#bf"target="_black">batata com frios</a></li>
+                <li><a href="janta.html#lfa"target="_black">lanche de frango</a></li>
+                <li><a href="janta.html#og"target="_black">Omelete de gorgonzola </a></li>
+                <li><a href="janta.html#scg"target="_black">Suflê de cenoura com gorgonzola </a></li>
+                <li><a href="janta.html#ffl"target="_black">Filé de Frango com Molho de Laranja </a></li>
+               
+                <li><a href="saldavel.html#tf"target="_black">Travessa de frutas</a></li>
+                <li><a href="saldavel.html#sha"target="_black"> Suco de Abacaxi com Hortelã </a></li>
+                <li><a href="saldavel.html#pizzaff"target="_black">pizza light </a></li>
+                <li><a href="saldavel.html#tfl"target="_black">Torta fria de legumes </a></li>
+                <li><a href="saldavel.html#pfc"target="_black">Panqueca Fitness </a></li>
+                <li><a href="saldavel.html#pizzaligth"target="_black">pizza frango low</a></li>
+                <li><a href="saldavel.html#tcq"target="_black">Tirinhas de couve-flor com queijo </a></li>
+                <li><a href="saldavel.html#sm"target="_black">SALADÃO Com MOLHO </a></li>
+                <li><a href="saldavel.html#sl"target="_black">SUFLÊ DE LEGUMES </a></li>
+                <li><a href="saldavel.html#ap"target="_black">arroz-primavera </a></li>
+                
+                <li><a href="paginas-sec/homen.html#h1"target="_black">hiper calórico</a></li>
+                <li><a href="paginas-sec/homen.html#h2"target="_black">hiper calorico WHEY</a></li>
+                <li><a href="paginas-sec/homen.html#ab"target="_black">abumina</a></li>
+                <li><a href="paginas-sec/homen.html#br"target="_black">barra de Proteína</a></li>
+                <li><a href="paginas-sec/homen.html#wp"target="_black">wey protein</a></li>
+                <li><a href="paginas-sec/homen.html#vpa"target="_black">vitamina de amedoin fit</a></li>
+                <li><a href="paginas-sec/homen.html#vfb"target="_black">escondidinho batata e frango fit</a></li>
+                
+                <li><a href="paginas-sec/pizza.html#pc"target="_black">pizza calabresa</a></li>
+                <li><a href="paginas-sec/pizza.html#pp"target="_black">pizza portuguesa</a></li>
+                <li><a href="paginas-sec/pizza.html#pf"target="_black">pizza frango</a></li>
+                <li><a href="paginas-sec/pizza.html#pm"target="_black">pizza mangueta</a></li>
+                <li><a href="paginas-sec/pizza.html#pn"target="_black">pizza napolitana</a></li>
+                <li><a href="paginas-sec/pizza.html#pb"target="_black">pizza bordas recheada</a></li>
+                <li><a href="paginas-sec/pizza.html#qb"target="_black">quibe queijo</a></li>
+                <li><a href="paginas-sec/pizza.html#pl"target="_black">pizza liquidificado</a></li>
+                <li><a href="paginas-sec/pizza.html#mp"target="_black">pizza mini</a></li>
+                <li><a href="paginas-sec/pizza.html#pff"target="_black">pizza facil</a></li>
+                <li><a href="paginas-sec/pizza.html#pbr"target="_black">pizza brigadeiro</a></li>
+                
+                <li><a href="paginas-sec/restaurante.html#mcb"target="_black">macarrao com bacon</a></li>
+                <li><a href="paginas-sec/restaurante.html#cg"target="_black">churas grego</a></li>
+                <li><a href="paginas-sec/restaurante.html#cb"target="_black">camarao e brocoles</a></li>
+                <li><a href="paginas-sec/restaurante.html#af"target="_black">Arroz de forno</a></li>
+                <li><a href="paginas-sec/restaurante.html#fc"target="_black">batata calabresa</a></li>
+                <li><a href="paginas-sec/restaurante.html#cm"target="_black">costela com mandioca</a></li>
+                <li><a href="paginas-sec/restaurante.html#mcb"target="_black">macarrão creme de batata</a></li>
+                <li><a href="paginas-sec/restaurante.html#fx"target="_black">frango xadrez</a></li>
+                <li><a href="paginas-sec/restaurante.html#rf"target="_black">risoto frango </a></li>
+                <li><a href="paginas-sec/restaurante.html#s"target="_black">salpicao</a></li>
+                
+                <li><a href="paginas-sec/lanchonete.html#h"target="_black">hambúrguer</a></li>
+                <li><a href="paginas-sec/lanchonete.html#ec"target="_black">esfiha de carne</a></li>
+                <li><a href="paginas-sec/lanchonete.html#cf"target="_black">coxinha de frango</a></li>
+                <li><a href="paginas-sec/lanchonete.html#sc"target="_black">sanduiche de calabresa</a></li>
+                <li><a href="paginas-sec/lanchonete.html#jl"target="_black">Joelho de Lanchonete</a></li>
+                <li><a href="paginas-sec/lanchonete.html#rm"target="_black">risote de milho</a></li>
+                <li><a href="paginas-sec/lanchonete.html#mp"target="_black">mini pizza</a></li>
+                <li><a href="paginas-sec/lanchonete.html#tfr"target="_black">Torta cremosa de frango, milho e requeijão</a></li>
+                <li><a href="paginas-sec/lanchonete.html#ps"target="_black">panqueca</a></li>
+                
+                <li><a href="paginas-sec/padaria.html#pq"target="_black">pao de queijo</a></li>
+                <li><a href="paginas-sec/padaria.html#s"target="_black">sonho</a></li>
+                <li><a href="paginas-sec/padaria.html#bt"target="_black">biscoito toalha</a></li>
+                <li><a href="paginas-sec/padaria.html#pf"target="_black">pao frances</a></li>
+                <li><a href="paginas-sec/padaria.html#cv"target="_black">cueca-virada</a></li>
+                <li><a href="paginas-sec/padaria.html#pln"target="_black">pao leite ninho</a></li>
+                <li><a href="paginas-sec/padaria.html#pz"target="_black">pao pizza</a></li>
+                <li><a href="paginas-sec/padaria.html#bb"target="_black">bolinho Bacalhau</a></li>
+                <li><a href="paginas-sec/padaria.html#epq"target="_black">escondidinho presunto queijo</a></li>
+                <li><a href="paginas-sec/padaria.html#pbl"target="_black">Pãozinho de Batata no liquidificador </a></li>
+                <li><a href="paginas-sec/padaria.html#plc"target="_black">Pão de leite condensado </a></li>
+                <li><a href="paginas-sec/padaria.html#paop"target="_black">Pão pizza</a></li>
+               
+                <li><a href="paginas-sec/bar.html#cc"target="_black">cerveja caseira</a></li>
+                <li><a href="paginas-sec/bar.html#ac"target="_black">amarula</a></li>
+                <li><a href="paginas-sec/bar.html#bf"target="_black">batida de frutas</a></li>
+                <li><a href="paginas-sec/bar.html#gm"target="_black">gimule</a></li>
+                <li><a href="paginas-sec/bar.html#vq"target="_black">vinho-quente</a></li>
+                <li><a href="paginas-sec/bar.html#bv"target="_black">Black Velvet </a></li>
+                <li><a href="paginas-sec/bar.html#m"target="_black">mimosa</a></li>
+                <li><a href="paginas-sec/bar.html#c"target="_black">Caipirinha</a></li>
+                <li><a href="paginas-sec/bar.html#mtt"target="_black"> Manhattan </a></li>
+                <li><a href="paginas-sec/bar.html#cum"target="_black">Cucumber Martin </a></li>
+    
+                <li><a href="paginas-sec/medicina.html#vmc"target="_black">Vitamina termogênica de mamão com canela </a></li>
+                <li><a href="paginas-sec/medicina.html#ca"target="_black">cha de amora  </a></li>
+                <li><a href="paginas-sec/medicina.html#cs"target="_black">Creme de shitake </a></li>
+                <li><a href="paginas-sec/medicina.html#tr"target="_black">tomate recheado </a></li>
+                <li><a href="paginas-sec/medicina.html#par"target="_black">Patê de alho com ricota </a></li>
+                <li><a href="paginas-sec/medicina.html#sai"target="_black">Suco anti-inflamatório  </a></li> 
+                <li><a href="paginas-sec/medicina.html#bf"target="_black">brocoles Forno </a></li>
+    
+                <li><a href="paginas-sec/kanabis.html#b"target="_black">brisadeiro</a></li>
+                <li><a href="paginas-sec/kanabis.html#pc"target="_black">pizza canabica</a></li>
+                <li><a href="paginas-sec/kanabis.html#bc"target="_black">cookie canabico</a></li>
+                <li><a href="paginas-sec/kanabis.html#bm"target="_black">bolonha</a></li>
+    
+                <li><a href="paginas-sec/bolo.html#bc"target="_black">bolo casamento</a></li>
+                <li><a href="paginas-sec/bolo.html#rc"target="_black">rocabole de chocolate</a></li>
+                <li><a href="paginas-sec/bolo.html#ba"target="_black">bolo de aniversario</a></li>
+                <li><a href="paginas-sec/bolo.html#bbl"target="_black">bolo de banana light</a></li>
+                <li><a href="paginas-sec/bolo.html#bcc"target="_black">bolo de cenoura</a></li>
+                <li><a href="paginas-sec/bolo.html#bl"target="_black">bolo de limao</a></li>
+                <li><a href="paginas-sec/bolo.html#bln"target="_black">bolo de leite ninho</a></li>
+                <li><a href="paginas-sec/bolo.html#cdr"target="_black">Bolo de Chocolate Dois Recheios </a></li>
+                <li><a href="paginas-sec/bolo.html#bn"target="_black">bolo de nozes</a></li>
+                <li><a href="paginas-sec/bolo.html#tm"target="_black">Bolo Trifle de Morango  </a></li>
+    
+                <li><a href="paginas-sec/festas.html#tm"target="_black">torta de morango</a></li>
+                <li><a href="paginas-sec/festas.html#cs"target="_black">cavaquinhos Salgado</a></li>
+                <li><a href="paginas-sec/festas.html#sfc"target="_black">Risóles de Frango Com Catupiry </a></li>
+                <li><a href="paginas-sec/festas.html#pfr"target="_black">Pão Recheado com Frango e Requeijão </a></li>
+                <li><a href="paginas-sec/festas.html#bbc"target="_black">Bolinho de batata com carne moída </a></li>
+                <li><a href="paginas-sec/festas.html#brbc"target="_black">BRIGADEIRO RECHEADO COM BOLO DE CENOURA</a></li>
+                <li><a href="paginas-sec/festas.html#bcc"target="_black">BOLO DE CENOURA COM CATUPIRY</a></li>
+                <li><a href="paginas-sec/festas.html#bs"target="_black">BOLO salgado</a></li>
+                <li><a href="paginas-sec/festas.html#bg"target="_black">jujuba</a></li>
+                <li><a href="paginas-sec/festas.html#bdc"target="_black">brigadeiro de churros</a></li>
+    
+            </div>
+    
+        </ul>
+              
+                    
+                
+                
+                       
+    
+       
+        
+        </div></nav>	 
+        <div class="facel">
+            <a href="https://www.facebook.com/Cooking-receitas-1773648966193302" target="_black"><img src="imlink/facebook.png" alt=""></a>
+        </div>
+      </header>
+       
+
+
+
+        <section>
+         <a name="lff"> <h1>  Lasanha de frango de frigideira</h1></a>
+
+
+          <div class="zoom" >   
+            <img  class="i4" src="img/rece/janta/lasanha-de-frango-na-frigideira-1.jpg"  >
+            </div>
+            <div class="zoom " >
+                <img class="i4" src="img/rece/janta/lasanha-de-frigideira-2.jpg" alt="">
+            </div>
+        </nav>
+            <br><br><br>
+    
+                <audio src="audio/janta/Lasanha de frango de frigideira.mp3" controls></audio>
+              
+
+        <h2> <span>   Essa lasanha de frango de frigideira é prática e versátil, você pode adicionar queijo ou substituir o frango por calabresa ou carne moída, para versões diferentes. Sirva com um salada ou arroz branco.</span></h2>
+
+
+
+        <ol>    Ingredientes</ol>
+
+          <li>  3 filés de peito soltinho e temperado</li>
+          <li>  1 xícara de chá de alho-poró cortado</li>
+            <li>  1 dente de alho picado</li>
+                <li>  ½ pimentão verde picado</li>
+                    <li>  1 lata de tomate pelado</li>
+                        <li>  4 colheres de sopa de extrato de tomate</li>
+                            <li>  ½ xícara de chá de água</li>
+                                <li>  1 ramo de manjericão</li>
+                                    <li>  Massa pré-cozida de lasanha</li>
+                                        <li>   Queijo a gosto</li>
+                                            <li>  Requeijão a gosto</li>
+
+
+
+                                                <ol>  Modo de Preparo</ol>
+                                                    <li>   Em uma frigideira grande, frite os filés de frango, dos dois lados, até ficarem bem douradinhos.</li>
+                                                        <li>   Passe ele para um processador, triture até ficar bem desfiado e reserve.</li>
+                                                            <li>   Na mesma frigideira, coloque o alho- poró, o alho, o pimentão e refogue.</li>
+                                                                <li>  Acrescente o tomate, o extrato de tomate, a água, o manjericão, sal, pimenta, misture e deixe cozinhar até começar a levantar fervura.</li>
+                                                                    <li>  Coloque o frango, misture, deixe cozinhar por mais 2 minutos e retire o molho da frigideira.</li>
+                                                                        <li>  Na frigideira, forre o fundo com o molho, acrescente a massa por cima e cubra ela com requeijão. Repita esse processo até a quantidade de lasanha que preferir.</li>
+                                                                            <li>  Finalize com uma camada de massa, cubra com o queijo ralado, tampe a panela e deixe cozinhar em fogo baixo por cerca de 10 minutos.</li>
+                                                                                <li>  Agora é só servir. Bom apetite.</li>
+
+        </section>
+
+
+        <section>
+           <a name="pcm"> <h1>  PANQUECAS DE CARNE MOÍDA</h1></a>
+         
+ 
+            <div class="zoom" >   
+                <img  class="i4" src="img/rece/janta/panquecacarene1.jpg"  >
+                </div>
+                <div class="zoom " >
+                    <img class="i4" src="img/rece/janta/panquecacarene2.jpg" alt="">
+                </div>
+            </nav>
+                <br><br><br>
+        
+                    <audio src="audio/janta/DELICIOSAS PANQUECAS DE CARNE MOÍDA.mp3" controls></audio>        
+         
+         
+         
+            
+         
+             <ol>INGREDIENTES DA MASSA</ol>
+         
+             <li> 2 xícaras de leite</li>
+             <li>  2 xícaras de farinha de trigo</li>
+                 <li> 1 xícara de azeite ou óleo</li>
+                     <li> 1/2 colher de chá de sal</li>
+                         <li> 3 ovos
+            
+                             <ol> INGREDIENTES DO MOLHO</ol>
+         
+             <li> 500 gramas de carne moída de patinho</li>
+                 <li> 1 cebola picada</li>
+                     <li>1 tomate picado</li>
+                         <li> 3 dentes de alho</li>
+                             <li> 1 sachê de molho de tomate</li>
+                                 <li> 1/2 xícara de salsinha picada</li>
+                                     <li> Sal e pimenta do reino à gosto</li>
+                                         <li> 1/2 colher de chá de páprica picante</li>
+         
+         
+         <ol>modo de preparado</ol>
+         
+          <li>Bata tudo no liquidificador.</li>
+          <li>Unte uma frigideira com azeite ou óleo, em fogo baixo, coloque uma concha de massa, espalhe bem, deixe dourar dos dois lados, retire do fogo.</li>
+         
+             <li> Em uma panela coloque um fio de azeite e a carne moída direto do congelador para panela (as carnes da swift não precisam descongelar, são bem práticas),</li>
+             <li> assim que ela cozinhar , acrescente a cebola, alho e o tomate e deixe murchar</li>
+                 <li> Coloque o molho de tomate e uma xícara de água, tempere com sal, pimenta, páprica, salsinha picada, deixe cozinhar por 10 minutos em fogo baixo e está pronto
+                     <li> Coloque o molho de carne moída na panqueca, enrole, coloque molho de tomate, salpique mussarela e leve ao forno 180° para gratinar
+             <h2><span> Opções de recheios</span><br>
+         
+                  carne de panela, frango desfiado, atum, legumes picadinhos, patês e até doces como creme de avelã, doce de leite, banana, uma infinidade de opções. Pode soltar a criatividade!!
+             Acompanhamentos: arroz, feijão, salada de folhas, legumes grelhados
+             Fica uma delicia, se fizer me conta, hein?! </h2>
+             
+         
+         </section>
+
+<section>
+
+  <a name="ps">  <h1> pizza de sardinha</h1></a>
+
+    <div class="zoom" >   
+        <img  class="i4" src="img/rece/janta/Pizza-de-Sardinha1.jpg"  >
+        </div>
+        <div class="zoom " >
+            <img class="i4" src="img/rece/janta/Pizza-de-Sardinha2.jpg" alt="">
+        </div>
+    </nav>
+        <br><br><br>
+
+            <audio src="audio/janta/pizza de sardinha.mp3" controls></audio>        
+ 
+ 
+
+
+
+
+<ol>ingredientes</ol>
+
+
+    <li>2 xicaras de farinha de trigo</li>
+    <li>1 e 1/2 xicara de agua morna</li>
+        <li>  1 colher sopa rasa de sal</li>
+            <li>  1 colher sopa rasa de açucar</li>
+                <li> 5 colheres sopa de óleo</li>
+                    <li>  2 ovos</li>
+                        <li>  1 envelope de fermento para pão</li>
+   <ol> Molho</ol>
+
+   <li> 1 Cebola média picada</li>
+    <li> 1 tomate picado</li>
+        <li>  1 lata de sardinha</li>
+            <li>  1 sachê de molho pronto</li>
+
+
+            <ol>modo de preparar</ol>
+
+   <li> Misture o fermento, a água, o açucar, o sal e o óleo.</li>
+   <li> Coloque os ovos inteiros e aos poucos a farinha. Bata bem a massa.</li>
+     <li>Coloque na forma untada e enfarinhada e deixe crescer de 30 minutos.</li>
+     <li> Pré asse, depois coloque o molho e leve ao forno por mais ou menos 30 minutos.</li>
+     <ol>Molho</ol>
+
+    <li>Frite a cebola, acrescente o tomate. Refogue um pouco e coloque o molho e sal.</li>
+    <li> Deixe ferver um pouco e desligue.</li>
+    <li> Daí sim colocar a sardinha</li>
+    
+     
+    
+    
+
+
+</section>
+
+<section>
+
+  <a name="mqf"> <h1> Misto quente de forno </h1></a>
+
+   <div class="zoom" >   
+    <img  class="i4" src="img/rece/janta/mistde forno1.jpg"  >
+    </div>
+    <div class="zoom " >
+        <img class="i4" src="img/rece/janta/mistde forno2.jpg" alt="">
+    </div>
+</nav>
+    <br><br><br>
+
+        <audio src="audio/janta/Misto quente de forno.mp3" controls></audio>   
+
+
+
+
+   <ol> Ingredientes 📝</ol>
+
+   <ol> Margarina para untar</ol>
+
+   <li> 12 fatias de pão de forma (sem a casca)</li>
+    <li>1/2 lata de molho de tomate pronto</li>
+<li>    6 fatias de presunto (ou a gosto)</li>
+    <li>4 colheres de sopa de requeijão</li>
+<li>    12 fatias de mussarela (ou a gosto)</li>
+<li>    1/2 caixa de creme de leite</li>
+<li>    1 tomate grande cortado em rodelas</li>
+<li>    orégano a gosto
+
+
+<ol>    Modo de preparo</ol>
+
+<li>    Unte um refratário com margarina.</li>
+<li>    Forre o fundo com 6 fatias de pão de forma.</li>
+<li>    Colocar metade do molho de tomate temperado, presunto, camada de requeijão, metade da mussarela, restante do pão de forma, molho de tomate, creme de leite, mussarela, tomate em rodelas, orégano.</li>
+   <li> Leve o refratário ao forno até a mussarela derreter</li>
+     
+    
+
+</section>
+
+
+<section>
+
+  <a name="mlc"> <h1> MACARRÃO ALHO E ÓLEO COM LINGUIÇA CALABRESA </h1></a>
+
+
+
+   <div class="zoom" >   
+    <img  class="i4" src="img/rece/janta/macarao calabresa1.jpg"  >
+    </div>
+    <div class="zoom " >
+        <img class="i4" src="img/rece/janta/macarao calabresa2.jpg" alt="">
+    </div>
+</nav>
+    <br><br><br>
+
+        <audio src="audio/janta/MACARRÃO ALHO E ÓLEO COM LINGUIÇA CALABRESA.mp3" controls></audio>   
+
+
+
+
+
+
+
+   <ol> INGREDIENTES</ol>
+
+   <li> 1/2 pacote de macarrão talharim (250 g)</li>
+    <li>  azeite a gosto</li>
+        <li> 1 gomo de linguiça calabresa defumada</li>
+            <li>  5 dentes de alho picadas</li>
+                <li> alho frito a gosto(opcional)</li>
+                    <li> salsinha fresca bem picadinha a gosto</li>
+                        <li>sal (opcional)</li>
+                            <li> queijo ralado a gosto (mussarela, parmesão ou outros)</li>
+   <ol>MODO DE PREPARO</ol>
+
+   <li> Em uma panela ferva água com um fio de azeite para preparar o macarrão.</li>
+    <li> Em seguida corte a linguiça em pedaços bem pequenos</li>
+        <li> Aqueça uma frigideira bem grande com bastante azeite e acrescente os alhos picados</li>
+            <li> Frite em fogo baixo (coloque umas 3 colheres de água, para não queimar o alho)</li>
+                <li> Acrescente a calabresa e mexa para não queimar</li>
+                    <li>  Acrescente mais azeite e 1 pitada de sal, se necessário</li>
+                        <li>  Quando o macarrão estiver "al dente" escorra bem e coloque aos poucos na frigideira</li>
+                            <li> Mexa bem para pegar o gosto dos ingredientes.</li>
+                                <li> Salpique por cima a salsinha e o queijo ralado</li>
+                                    <li> E está pronto um prato único e muito saboroso.</li>
+     
+    
+
+
+
+</section>
+<section>
+
+  <a name="bf"> <h1> Batata assada com frios </h1></a>
+
+
+   <div class="zoom" >   
+    <img  class="i4" src="img/rece/janta/batata asada1.jpg"  >
+    </div>
+    <div class="zoom " >
+        <img class="i4" src="img/rece/janta/batata asada2.jpg" alt="">
+    </div>
+</nav>
+    <br><br><br>
+
+        <audio src="audio/janta/Batata assada com frios.mp3" controls></audio>   
+
+
+
+
+
+
+    <ol> Ingredientes</ol>
+
+    <li>6 batatas</li>
+<li>    500 g mussarela</li>
+<li>    500 g presunto ou apresuntado</li>
+<li>    1 cebola ralada</li>
+<li>    ½ litro de leite</li>
+<li>    2 creme de leite</li>
+<li>    3 colheres de sopa de manteiga</li>
+<li>    Sal, azeite e orégano a gosto</li>
+
+
+
+<ol>     Modo de Preparo</ol>
+<li>    Em um refratário corte as batatas em rodelas grossas, misture a cebola ralada, a manteiga.</li>
+ <li>   Em uma vasilha misture o leite e o creme de leite.</li>
+<li>    Derrame sobre as batatas.</li>
+<li>    Cubra as batatas com a mussarela e o presunto e salpique orégano.</li>
+<li>    Leve as batatas ao forno por 30 minutos.
+ 
+    
+     
+    
+
+
+
+</section>
+
+<section>
+  <a name="lfa"> <h1> Lanche de frango, abacate e azeitona</h1></a>
+
+
+   <div class="zoom" >   
+    <img  class="i4" src="img/rece/janta/lacheazeitona1.jpg"  >
+    </div>
+    <div class="zoom " >
+        <img class="i4" src="img/rece/janta/lacheazeitona2.jpg" alt="">
+    </div>
+</nav>
+    <br><br><br>
+
+        <audio src="audio/janta/Lanche de frango, abacate e azeitona.mp3" controls></audio> 
+
+
+
+
+  <ol> Ingredientes</ol>
+
+<li>1 pão de metro</li>
+<li>2/3 de xícara (chá) de maionese</li>
+<li>1/3 de xícara (chá) de azeitonas pretas picadas</li>
+<li>2 e 1/2 xícaras (chá) de peito de frango cozido e desfiado</li>
+<li>2 xícaras (chá) de queijo mussarela ralado</li>
+<li>1 abacate em fatias finas</li>
+<li>1/2 maço de alface americana em tiras</li>
+<li>Sal a gosto</li>
+<li>Azeitonas pretas para decorar</li>
+
+    <ol>Modo de preparo</ol>
+
+<li>Corte o pão na horizontal e reserve.</li>
+<li> Em uma tigela, misture a maionese com as azeitonas e espalhe nas duas metades do pão.</li>
+<li> Espalhe o frango, a mussarela, o abacate e a alface.</li>
+<li> Tempere com sal e feche o lanche.</li>
+<li> Decore com azeitonas pretas, fatie e sirva.</li>
+<li> Pronto! Um lanchinho delicioso para o seu jantar rápido.</li>
+
+
+
+</section>
+<section>
+    <a name="og"><h1>Omelete de gorgonzola</h1></a>
+
+
+    <div class="zoom" >   
+        <img  class="i4" src="img/rece/janta/omelete1.jpg"  >
+        </div>
+        <div class="zoom " >
+            <img class="i4" src="img/rece/janta/omelete2.jpg" alt="">
+        </div>
+    </nav>
+        <br><br><br>
+    
+            <audio src="audio/janta/Omelete de gorgonzola.mp3" controls></audio>
+
+
+    <ol>Ingredientes</ol>
+
+    <li>4 ovos</li>
+<li>    2 colheres (sopa) de creme de leite</li>
+<li>    Sal e pimenta-do-reino a gosto</li>
+<li>    1 colher (sopa) de manteiga</li>
+<li>    3/4 de xícara (chá) de queijo gorgonzola esmigalhado</li>
+
+<ol>    Modo de preparo</ol>
+    
+   <li> Em uma tigela, bata os ovos com o creme de leite, sal e pimenta a gosto.</li>
+   <li> Derreta a manteiga em uma frigideira antiaderente, em fogo médio, e despeje os ovos.</li>
+   <li> Frite até dourar, espalhe o gorgonzola e frite por mais 1 minuto.</li>
+   <li> Dobre ao meio e coloque sobre um prato. Se desejar, sirva com requeijão cremoso.</li>
+
+
+
+
+
+
+</section>
+
+
+    <section>
+
+
+      <a name="scg"> <h1> Suflê de cenoura com gorgonzola</h1></a>
+
+       <div class="zoom" >   
+        <img  class="i4" src="img/rece/janta/suflê-de-cenoura-1.jpg"  >
+        </div>
+        <div class="zoom " >
+            <img class="i4" src="img/rece/janta/suflê-de-cenoura-2.jpg" alt="">
+        </div>
+    </nav>
+        <br><br><br>
+
+            <audio src="audio/janta/Suflê de cenoura com gorgonzola.mp3" controls></audio>
+
+
+
+       <h2><span> Essa deliciosa receita de suflê de cenoura com gorgonzola é perfeita para um jantar especial e fica ótima servida com uma salada ou com sua proteína preferida!</span></h2>
+
+        <ol>Ingredientes</ol>
+
+
+        <li>1 cenoura média (descascada, picada em cubinhos e cozida)</li>
+            <li> 1 ovo (gema e clara separadas)</li>
+                <li> 1 fio de azeite</li>
+                    <li> 1 colher de sobremesa (não muito cheia) de manteiga</li>
+                        <li> 1 colher de sopa (bem cheia) de farinha de trigo</li>
+                            <li>100ml de leite</li>
+                                <li> 1 colher de sopa de queijo gorgonzola picado</li>
+                                    <li> 1 colher de sopa de queijo parmesão ralado</li>
+                                        <li> Sal a gosto</li>
+                                            <li>  Queijo parmesão ralado para salpicar nas forminhas</li>
+       <ol> Modo de Preparo</ol>
+
+       <li> Em um recipiente, amasse bem a cenoura e reserve.</li>
+        <li> Bata as claras em neve, com uma pitada de sal e reserve.</li>
+            <li> Em uma panela, adicione o azeite e derreta a manteiga.</li>
+                <li>  Coloque a farinha e mexa até misturar bem e mudar de cor.</li>
+                    <li> Acrescente o leite gradualmente, sem parar de mexer, até deixar a massa firme, mas cremosa.</li>
+                        <li>  Junte as gemas, o queijo gorgonzola, o parmesão, a cenoura e mexa.</li>
+                            <li>  Acerte o sal, caso precise, e quando estiver bem homogêneo, coloque as claras em neve, mexa delicadamente para incorporar e desligue o fogo.</li>
+                                <li>  Unte pequenos refratários, salpique o parmesão ralado por dentro dele e coloque a mistura até faltar um dedo para a borda.</li>
+                                    <li>  Leve ao forno preaquecido a 220 graus até eles ficarem firmes e criarem uma casquinha dourada.</li>
+                                        <li> Agora é só servir. Bom apetite.</li>
+
+    </section>
+<section>
+
+ <a name="ffl"> <h1>  Filé de Frango com Molho de Laranja</h1></a>
+
+
+  <div class="zoom" >   
+    <img  class="i4" src="img/rece/janta/fila com laranja1.jpg"  >
+    </div>
+    <div class="zoom " >
+        <img class="i4" src="img/rece/janta/fila com laranja2.jpg" alt="">
+    </div>
+</nav>
+    <br><br><br>
+
+        <audio src="audio/janta/Filé de Frango com Molho de Laranja.mp3" controls></audio>
+
+
+
+
+
+  <ol>  Ingredientes (4 porções)</ol>
+    
+   <li> 4 filés de frango</li>
+    
+    <li> 2 dentes de alho grandes amassados</li>
+    
+        <li> 1/2 colher (de café) de pimenta do reino moída</li>
+    
+            <li> Sal a gosto</li>
+    
+                <li>2 colheres (de sopa) de óleo</li>
+    
+                    <li> Molho de Laranja</li>
+    
+                        <li> 1 xícara (de chá) de suco de laranja (natural)</li>
+    
+                            <li> 1 colher (de chá) de manteiga</li>
+    
+                                <li> 2 colheres (de chá) de amido de milho (maisena)</li>
+    
+                                    <li> 1 colher (de chá) de açúcar</li>
+    
+                                        <li> Folhas de manjericão para polvilhar (opcional)</li>
+    
+   <ol> Modo de Preparo</ol>
+    
+   <li> Coloque os filés de frango em uma tigela e tempere com o alho amassado,</li>
+   <li> o sal e a pimenta do reino, misture bem e deixe tomando gosto por no mínimo 30 minutos.</li>
+   <li> Depois aqueça o óleo em uma frigideira e frite os filés.</li>
+   <li> Coloque-os na frigideira quente e só vire os filés quando eles já estiverem dourados.</li>
+   <li> Não fure os filés para eles não ressecarem e nem fique esfregando ele na frigideira, coloque eles lá e só vire quando dourar.</li>
+   <li> Assim que dourar dos dois lados, já está pronto. Reserve.</li>
+    
+   <ol> Molho</ol>
+    
+   <li> Dissolva o amido de milho com o açúcar e o suco de laranja.</li>
+   <li> Coloque em uma panela, junte a manteiga e leve ao fogo. Deixe ferver, mexendo sempre. </li>
+   <li>Ferva alguns minutos até ele ficar levemente cremoso.</li>
+    
+   <li> Arrume os filés em uma travessa,</li>
+   <li> coloque o molho por cima e polvilhe com folhinhas de manjericão. Sirva quente.</li>
+
+
+</section>
+<footer style="border: 1px solid rgb(233, 45, 45);width: 100%; height: 100px; border-radius: 1px;background-color: #6d3180;">
+    
+  
+    
+    <div id="d1" style="padding: 30px; padding-left:20px;" >
+            
+        <a   class="btmenu" href="index.html"  >inicio</a>
+    <a class="btmenu" href="" target="">sobre</a>
+    <a class="btmenu" href="">afiliados</a>
+    <a class="btmenu" href="">trabalhe com nosco</a>
+    
+
+ 
+ </div>
+</footer>
+
+
+
+
+   </body>
+   </html>

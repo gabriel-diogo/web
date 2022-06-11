@@ -1,0 +1,1534 @@
+
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>cooking recipes</title>
+
+
+       <link rel="stylesheet" href="all.css">
+       <script src="all.js"></script>
+       <script src="https://kit.fontawesome.com/c1633bff86.js" crossorigin="anonymous"></script>
+       <link href="https://cdn.jsdelivr.net/.../dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+       <script src="https://cdn.jsdelivr.net/.../dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+       <script
+       src="https://code.jquery.com/jquery-3.6.0.js"
+       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+       crossorigin="anonymous"></script>
+
+
+       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3835107476608583"
+     crossorigin="anonymous"></script>
+
+      <style>
+     #fic{
+         width: 50px;
+            height: 50px;
+     }
+        
+      #cabe{
+          width: 100%;
+          border: 1px solid black;
+          height: 50px;
+       
+        background-image: linear-gradient(rgb(92, 30, 100), rgb(221, 26, 211), rgb(105, 12, 82));   
+      } 
+      #cabe h3 { 
+          text-align: center;
+          margin-bottom: 40px;
+      }
+      body{
+          background-size: 400px;
+      }  
+      </style>
+          <script>
+           function pesquisar() {
+ var  input,filtros,menu,menuitens,links;
+ input=document.getElementById('pes');
+ filtros=input.value.toUpperCase();
+ menu=document.getElementById('menu');
+ menuitens=menu.getElementsByTagName('li');
+ for(var i=0; i<= menuitens.length;i++){
+ links= menuitens[i].getElementsByTagName('a')[0];
+ if (links.innerHTML.toUpperCase().indexOf(filtros)>-1) {
+ menuitens[i].style.display="";
+ }else{
+ menuitens[i].style.display='none';
+ }
+ }}
+function mostra(id) {
+ if (document.getElementById(id).display == 'block') {
+ document.getElementById(id).style.display='none';
+ 
+ 
+}else{
+ document.getElementById(id).style.display ='block';
+    
+}}
+
+
+
+           </script>
+   </head>
+   <body>
+    
+    
+    <header class="menuh">
+        <main>
+        <div class="capecalho">
+        <div class="logo">
+            
+         <img class="n4" src="img/log.jpg" >
+        </div>
+        
+
+
+        
+   
+    
+      
+   
+    
+       
+       
+
+
+      
+           <div id="d1" class="mp" >
+            
+               <a class="bitmenu1" href="index.html">inicio</a>
+           <a class="btmenu" href="cafe.html" target="">café </a>
+           <a class="btmenu" href="almoco.html">almoço</a>
+           <a class="btmenu" href="lanche.html">lanche</a>
+           <a class="btmenu" href="janta.html">jantar</a>
+           <a class="btmenu" href="saldavel.html">saldável</a>
+          
+      
+        
+        </div>
+        <div>
+        <marquee behavior="alternate" loop="3"> <h1 style="color: yellowgreen;">welcome cooking recipes !!!</h1></marquee>
+       
+    </div>
+    <div id="cabe"><h3 style="color: rgb(50, 205, 184);" id="lg" ></h3></div>
+    <div class="conten" >
+        <div class="card">
+            <h1 >Login</h1><br>
+            
+            <div id="ms"></div>
+            <br>
+            <div class="label-float">
+                <label id="luu" for="usuario">usuario</label><br>
+                <input type="text"id="user" placeholder="nome"  maxlength="40" required><br>
+                
+            </div>
+            <div class="label-float">
+                <label id="lss" for="pass" >senha</label><br>
+                <i class="fa fa-eye" aria-hidden="true" onclick="ms()"></i>
+                <input  type="password" id="pass" placeholder="senha"  maxlength="40" required>
+            </div>
+            <br><br>
+            
+              <div>
+                  
+                <button onclick="entra()" class="btmenu" id="btn-login">Entrar</button><br>
+                <button onclick="sai()" class="btmenu" id="btn-login">sair</button><br>
+                </div>
+       <br><br>
+         <div >
+            <a  class="btmenu" href="cadastro.html"> cadastro</a>
+        </div>
+        <br><br>
+        <div>
+            <a href="#" onclick="login()" id="logar()"><img id="fic" src="imlink/facebook.png" alt=""> </a>
+            <div id="status"></div>
+        </div>
+    
+
+</div>
+</div>
+
+
+<div id="su" >
+<button id="mos" onclick="mos(),tc()"   class="btmenu"><h3 id="mm" >logar</h3></button>
+</div>
+      <br><br> 
+
+    <div class="pp">
+       
+    
+            
+    <nav class="menuc" id="nav">
+        
+        <input type="text" id="pes" onkeyup="pesquisar()"  placeholder="pesquisa..." title="digite" maxlength="20">
+        
+        <ul id="menu" class="li">
+    
+            <input type="button" value="pesquisar" onclick="mostra('dess')" class="botao"/>
+            <div id="dess" style=" overflow-y: scroll;height: 200px; " >
+            
+            
+
+
+            <li><a href="cafe.html#queijo"target="_black">queijo</a></li>
+            <li><a href="#feijoada" target="_black">feijoada</a></li>
+            <li><a href="almoco.html#aroz" target="_black">Arroz de linguiça com milho</a></li>
+            <li><a href="cafe.html#nmalu"target="_black">bolo nega Maluca</a></li>
+            <li><a href="cafe.html#cap "target="_black">cappuccino</a></li>
+            <li><a href="cafe.html#pqueijo"target="_black">pao de queijo </a></li>
+            <li><a href="cafe.html#requeijão "target="_black">requeijão</a></li>
+            <li><a href="cafe.html#biscoitoa "target="_black">biscoito amanteigado</a></li>
+            <li><a href="cafe.html#pave"target="_black">PAVÊ DE PRESTÍGIO </a></li>
+            <li><a href="cafe.html#bolmilho"target="_black">bolinho-de-milho</a></li>
+            <li><a href="cafe.html#rosca"target="_black">ROSCA FOFINHA </a></li>
+            <li><a href="paginas-sec/kanabis.html#canabis"target="_black">manteiga canabica</a></li>
+            <li><a href="#picanha"target="_black">Picanha recheada  </a></li>
+            <li><a href="#Holandesa"target="_black">torta holadesa </a></li>
+            <li><a href="#panqueca"target="_black">panqueca</a></li>
+            <li><a href="#mqueijo"target="_black">macarao com queijo </a></li>
+            <li><a href="#Omuraisu"target="_black">Omuraisu </a></li>
+            <li><a href="#curyy"target="_black">curry</a></li>
+            <li><a href="#esrusso">estrogonofe </a></li>
+            <li><a href="#monsieur"target="_black"> monsieur</a></li>
+            <li><a href="paginas-sec/bolo.html#rc"target="_black">rocabole</a></li>
+            <li><a href="cafe.html#tcok"target="_black">torta cookie</a></li>
+            
+            <li><a href="almoco.html#hd"target="_black">hot dog forno </a></li>
+            <li><a href="almoco.html#ome"target="_black">omelete de forno</a></li>
+            <li><a href="almoco.html#fj"target="_black">feijao tropeiro</a></li>
+            <li><a href="almoco.html#escamarao"target="_black">estrogonofe de camarao </a></li>
+            <li><a href="almoco.html#tport"target="_black">torta portuguesa</a></li>
+            <li><a href="almoco.html#pvinho"target="_black">picanha ao vinho </a></li>
+            <li><a href="almoco.html#pf"target="_black">pastelao de forno</a></li>
+            <li><a href="almoco.html#mf"target="_black">macarao de Forno</a></li>
+            <li><a href="almoco.html#lbf"target="_black"> Lasanha de batata com frango </a></li>
+           
+            <li><a href="lanche.html#va"target="_black">vitamina de amedoim </a></li>
+            <li><a href="lanche.html#bpm"target="_black">bolo pe de moleque</a></li>
+            <li><a href="lanche.html#paor"target="_black">pao recheado</a></li>
+            <li><a href="lanche.html#thd"target="_black">torta hot dog</a></li>
+            <li><a href="lanche.html#ef"target="_black">empadao frango</a></li>
+            <li><a href="lanche.html#pcl"target="_black">pao de cebola</a></li>
+            <li><a href="lanche.html#sf"target="_black">saduiche de forno</a></li>
+            <li><a href="lanche.html#jpz"target="_black">joelho de pizza</a></li>
+            <li><a href="lanche.html#bbt"target="_black">bombom de travessa</a></li>
+            <li><a href="lanche.html#bca"target="_black">bolo de amendoim</a></li>
+           
+            <li><a href="janta.html#lff"target="_black">lasanha de frango</a></li>
+            <li><a href="janta.html#pcm"target="_black">PANQUECA de carne moida</a></li>
+            <li><a href="janta.html#ps"target="_black">Pizza de Sardinha</a></li>
+            <li><a href="janta.html#mqf"target="_black">misto quente</a></li>
+            <li><a href="janta.html#mlc"target="_black">MACARRÃO COM LINGUIÇA CALABRESA </a></li>
+            <li><a href="janta.html#bf"target="_black">batata com frios</a></li>
+            <li><a href="janta.html#lfa"target="_black">lanche de frango</a></li>
+            <li><a href="janta.html#og"target="_black">Omelete de gorgonzola </a></li>
+            <li><a href="janta.html#scg"target="_black">Suflê de cenoura com gorgonzola </a></li>
+            <li><a href="janta.html#ffl"target="_black">Filé de Frango com Molho de Laranja </a></li>
+           
+            <li><a href="saldavel.html#tf"target="_black">Travessa de frutas</a></li>
+            <li><a href="saldavel.html#sha"target="_black"> Suco de Abacaxi com Hortelã </a></li>
+            <li><a href="saldavel.html#pizzaff"target="_black">pizza light </a></li>
+            <li><a href="saldavel.html#tfl"target="_black">Torta fria de legumes </a></li>
+            <li><a href="saldavel.html#pfc"target="_black">Panqueca Fitness </a></li>
+            <li><a href="saldavel.html#pizzaligth"target="_black">pizza frango low</a></li>
+            <li><a href="saldavel.html#tcq"target="_black">Tirinhas de couve flor com queijo </a></li>
+            <li><a href="saldavel.html#sm"target="_black">SALADÃO Com MOLHO </a></li>
+            <li><a href="saldavel.html#sl"target="_black">SUFLÊ DE LEGUMES </a></li>
+            <li><a href="saldavel.html#ap"target="_black">arroz primavera </a></li>
+            
+            <li><a href="paginas-sec/homen.html#h1"target="_black">hiper calórico</a></li>
+            <li><a href="paginas-sec/homen.html#h2"target="_black">hiper calorico WHEY</a></li>
+            <li><a href="paginas-sec/homen.html#ab"target="_black">abumina</a></li>
+            <li><a href="paginas-sec/homen.html#br"target="_black">barra de Proteína</a></li>
+            <li><a href="paginas-sec/homen.html#wp"target="_black">wey protein</a></li>
+            <li><a href="paginas-sec/homen.html#vpa"target="_black">vitamina de amedoin fit</a></li>
+            <li><a href="paginas-sec/homen.html#vfb"target="_black">escondidinho batata e frango fit</a></li>
+            
+            <li><a href="paginas-sec/pizza.html#pc"target="_black">pizza calabresa</a></li>
+            <li><a href="paginas-sec/pizza.html#pp"target="_black">pizza portuguesa</a></li>
+            <li><a href="paginas-sec/pizza.html#pf"target="_black">pizza frango</a></li>
+            <li><a href="paginas-sec/pizza.html#pm"target="_black">pizza mangueta</a></li>
+            <li><a href="paginas-sec/pizza.html#pn"target="_black">pizza napolitana</a></li>
+            <li><a href="paginas-sec/pizza.html#pb"target="_black">pizza bordas recheada</a></li>
+            <li><a href="paginas-sec/pizza.html#qb"target="_black">quibe queijo</a></li>
+            <li><a href="paginas-sec/pizza.html#pl"target="_black">pizza liquidificado</a></li>
+            <li><a href="paginas-sec/pizza.html#mp"target="_black">pizza mini</a></li>
+            <li><a href="paginas-sec/pizza.html#pff"target="_black">pizza facil</a></li>
+            <li><a href="paginas-sec/pizza.html#pbr"target="_black">pizza brigadeiro</a></li>
+            
+            <li><a href="paginas-sec/restaurante.html#mcb"target="_black">macarrao com bacon</a></li>
+            <li><a href="paginas-sec/restaurante.html#cg"target="_black">churas grego</a></li>
+            <li><a href="paginas-sec/restaurante.html#cb"target="_black">camarao e brocoles</a></li>
+            <li><a href="paginas-sec/restaurante.html#af"target="_black">Arroz de forno</a></li>
+            <li><a href="paginas-sec/restaurante.html#fc"target="_black">batata calabresa</a></li>
+            <li><a href="paginas-sec/restaurante.html#cm"target="_black">costela com mandioca</a></li>
+            <li><a href="paginas-sec/restaurante.html#mcb"target="_black">macarrão creme de batata</a></li>
+            <li><a href="paginas-sec/restaurante.html#fx"target="_black">frango xadrez</a></li>
+            <li><a href="paginas-sec/restaurante.html#rf"target="_black">risoto frango </a></li>
+            <li><a href="paginas-sec/restaurante.html#s"target="_black">salpicao</a></li>
+            
+            <li><a href="paginas-sec/lanchonete.html#h"target="_black">hambúrguer</a></li>
+            <li><a href="paginas-sec/lanchonete.html#ec"target="_black">esfiha de carne</a></li>
+            <li><a href="paginas-sec/lanchonete.html#cf"target="_black">coxinha de frango</a></li>
+            <li><a href="paginas-sec/lanchonete.html#sc"target="_black">sanduiche de calabresa</a></li>
+            <li><a href="paginas-sec/lanchonete.html#jl"target="_black">Joelho de Lanchonete</a></li>
+            <li><a href="paginas-sec/lanchonete.html#rm"target="_black">risote de milho</a></li>
+            <li><a href="paginas-sec/lanchonete.html#mp"target="_black">mini pizza</a></li>
+            <li><a href="paginas-sec/lanchonete.html#tfr"target="_black">Torta cremosa de frango, milho e requeijão</a></li>
+            <li><a href="paginas-sec/lanchonete.html#ps"target="_black">panqueca</a></li>
+            
+            <li><a href="paginas-sec/padaria.html#pq"target="_black">pao de queijo</a></li>
+            <li><a href="paginas-sec/padaria.html#s"target="_black">sonho</a></li>
+            <li><a href="paginas-sec/padaria.html#bt"target="_black">biscoito toalha</a></li>
+            <li><a href="paginas-sec/padaria.html#pf"target="_black">pao frances</a></li>
+            <li><a href="paginas-sec/padaria.html#cv"target="_black">cueca-virada</a></li>
+            <li><a href="paginas-sec/padaria.html#pln"target="_black">pao leite ninho</a></li>
+            <li><a href="paginas-sec/padaria.html#pz"target="_black">pao pizza</a></li>
+            <li><a href="paginas-sec/padaria.html#bb"target="_black">bolinho Bacalhau</a></li>
+            <li><a href="paginas-sec/padaria.html#epq"target="_black">escondidinho presunto queijo</a></li>
+            <li><a href="paginas-sec/padaria.html#pbl"target="_black">Pãozinho de Batata no liquidificador </a></li>
+            <li><a href="paginas-sec/padaria.html#plc"target="_black">Pão de leite condensado </a></li>
+            <li><a href="paginas-sec/padaria.html#paop"target="_black">Pão pizza</a></li>
+           
+            <li><a href="paginas-sec/bar.html#cc"target="_black">cerveja caseira</a></li>
+            <li><a href="paginas-sec/bar.html#ac"target="_black">amarula</a></li>
+            <li><a href="paginas-sec/bar.html#bf"target="_black">batida de frutas</a></li>
+            <li><a href="paginas-sec/bar.html#gm"target="_black">gimule</a></li>
+            <li><a href="paginas-sec/bar.html#vq"target="_black">vinho-quente</a></li>
+            <li><a href="paginas-sec/bar.html#bv"target="_black">Black Velvet </a></li>
+            <li><a href="paginas-sec/bar.html#m"target="_black">mimosa</a></li>
+            <li><a href="paginas-sec/bar.html#c"target="_black">Caipirinha</a></li>
+            <li><a href="paginas-sec/bar.html#mtt"target="_black"> Manhattan </a></li>
+            <li><a href="paginas-sec/bar.html#cum"target="_black">Cucumber Martin </a></li>
+
+            <li><a href="paginas-sec/medicina.html#vmc"target="_black">Vitamina termogênica de mamão com canela </a></li>
+            <li><a href="paginas-sec/medicina.html#ca"target="_black">cha de amora  </a></li>
+            <li><a href="paginas-sec/medicina.html#cs"target="_black">Creme de shitake </a></li>
+            <li><a href="paginas-sec/medicina.html#tr"target="_black">tomate recheado </a></li>
+            <li><a href="paginas-sec/medicina.html#par"target="_black">Patê de alho com ricota </a></li>
+            <li><a href="paginas-sec/medicina.html#sai"target="_black">Suco anti-inflamatório  </a></li> 
+            <li><a href="paginas-sec/medicina.html#bf"target="_black">brocoles Forno </a></li>
+
+            <li><a href="paginas-sec/kanabis.html#b"target="_black">brisadeiro</a></li>
+            <li><a href="paginas-sec/kanabis.html#pc"target="_black">pizza canabica</a></li>
+            <li><a href="paginas-sec/kanabis.html#bc"target="_black">cookie canabico</a></li>
+            <li><a href="paginas-sec/kanabis.html#bm"target="_black">bolonha</a></li>
+
+            <li><a href="paginas-sec/bolo.html#bc"target="_black">bolo casamento</a></li>
+            <li><a href="paginas-sec/bolo.html#rc"target="_black">rocabole de chocolate</a></li>
+            <li><a href="paginas-sec/bolo.html#ba"target="_black">bolo de aniversario</a></li>
+            <li><a href="paginas-sec/bolo.html#bbl"target="_black">bolo de banana light</a></li>
+            <li><a href="paginas-sec/bolo.html#bcc"target="_black">bolo de cenoura</a></li>
+            <li><a href="paginas-sec/bolo.html#bl"target="_black">bolo de limao</a></li>
+            <li><a href="paginas-sec/bolo.html#bln"target="_black">bolo de leite ninho</a></li>
+            <li><a href="paginas-sec/bolo.html#cdr"target="_black">Bolo de Chocolate Dois Recheios </a></li>
+            <li><a href="paginas-sec/bolo.html#bn"target="_black">bolo de nozes</a></li>
+            <li><a href="paginas-sec/bolo.html#tm"target="_black">Bolo Trifle de Morango  </a></li>
+
+            <li><a href="paginas-sec/festas.html#tm"target="_black">torta de morango</a></li>
+            <li><a href="paginas-sec/festas.html#cs"target="_black">cavaquinhos Salgado</a></li>
+            <li><a href="paginas-sec/festas.html#sfc"target="_black">Risóles de Frango Com Catupiry </a></li>
+            <li><a href="paginas-sec/festas.html#pfr"target="_black">Pão Recheado com Frango e Requeijão </a></li>
+            <li><a href="paginas-sec/festas.html#bbc"target="_black">Bolinho de batata com carne moída </a></li>
+            <li><a href="paginas-sec/festas.html#brbc"target="_black">BRIGADEIRO RECHEADO COM BOLO DE CENOURA</a></li>
+            <li><a href="paginas-sec/festas.html#bcc"target="_black">BOLO DE CENOURA COM CATUPIRY</a></li>
+            <li><a href="paginas-sec/festas.html#bs"target="_black">BOLO salgado</a></li>
+            <li><a href="paginas-sec/festas.html#bg"target="_black">jujuba</a></li>
+            <li><a href="paginas-sec/festas.html#bdc"target="_black">brigadeiro de churros</a></li>
+
+        </div>
+
+    </ul>
+          
+                
+            
+            
+                   
+
+   
+    
+    </div>	
+    
+
+
+   
+   <br><br>
+   
+   <div class="facel">
+    <a href="https://www.facebook.com/Cooking-receitas-1773648966193302" target="_black"><img src="imlink/facebook.png" alt=""></a>
+</div>
+
+<br><br><br>
+
+   
+     </nav>
+</main></header>
+   
+
+ <br>
+
+    <section id="modulos">
+            <div class="cat" ><img src="imlink/faca.png"><h1>menu</h1></img></div>   
+
+
+
+
+        <details>
+        <summary class="suma"> <strong>  fitness</strong> </summary>
+        <br><br>
+        <div >
+
+            <div class="divlinha2"> <a href="paginas-sec/homen.html" class="btmenu2"target="_black"> fitness</a></div>
+        <br><br>
+       
+
+
+       </div>
+       <br><br>
+       <section>
+          
+<div>
+
+<section>
+<details>
+
+<summary> 
+            Entenda o que muda na dieta  
+           </summary>
+           <br>
+           <audio src="pg2/audio/fitness.mp3" controls></audio>
+<br>
+   <p> Os homens emagrecem com mais facilidade do que as mulheres? Isso não é uma regra, mas pode acontecer, já que o metabolismo deles é mais rápido , afirma a nutricionista Raquel Maia, da Dhamma Consultoria em Nutrição, Saúde e Alimentação.
+
+    Numa entrevista bastante detalhada, a especialista explica esta e algumas outras diferenças entre os organismos masculino e feminino e revela o que está por trás das dietas que realmente funcionam, não importa o sexo.
+    
+    1) Há mudanças nas proporções de carboidratos, proteínas e gorduras?
+    Independentemente do sexo, as proporções de carboidratos, proteínas e gorduras diferem de pessoa para pessoa. O cálculo ideal leva em conta peso, altura, idade e atividade física de cada um, ou seja, valores são individuais.
+    
+    2) Homens e mulheres queimam calorias da mesma forma?
+    A queima de calorias é influenciada por diversos fatores, como atividade física e estado de saúde, não depende somente do sexo.
+    
+    3) É verdade que as mulheres precisam mais de carboidratos? Por quê?
+    No caso das mulheres, as necessidades (não só de carboidratos, mas de todos os nutrientes) aumentam durante a gravidez para suprir as necessidades do feto. Durante a amamentação, essas necessidades continuam elevadas também para que se mantenha um bom suprimento de leite. Mulheres que não estejam grávidas, amamentando ou praticando exercícios de longa duração não precisam de uma ingestão maior de carboidratos, pois é sabido que seu excesso leva a obesidade.
+    
+    4) E como é a necessidade de proteínas?
+    A recomendação padrão da OMS (Organização Mundial de Saúde) é de que o VET (Valor Energético Total) diário seja composto por 15 30% de proteínas. Sendo assim, como os homens normalmente necessitam de um valor calórico mais elevado que as mulheres, sua ingestão de proteínas acaba sendo maior também, sempre preconizando a porcentagem indicada pela OMS. Deve-se lembrar que atletas e pessoas com condições clínicas diferenciadas necessitam de um aumento nessa porcentagem.
+    
+    5) A necessidade de hidratação varia entre homens e mulheres?
+    A necessidade de hidratação irá variar de acordo, principalmente, com a idade e atividade física. Se o homem ou a mulher praticam algum tipo de atividade física, é necessária uma reposição maior para que se compensem as perdas.
+    
+    6) No que o ciclo menstrual interfere na dieta?
+    Os hormônios que interagem durante a fase menstrual são os responsáveis por regular o comando cerebral da fome e até do humor. No período menstrual é normal que haja o aumento da fome, o inchaço do corpo e os sintomas típicos da TPM. Para minimizar os sintomas da TPM, evite bebidas que contenham cafeína, como chá preto, café e refrigerantes. Como há sangramento, ocorre a perda de ferro, sendo assim consuma alimentos ricos em ferro como feijão, carne vermelha e folhosos escuros (espinafre, agrião, rúcula) para suprir essa perda.
+    
+    7) No caso das frutas e dos legumes, há alguma variação?
+    Não há variação no consumo de frutas e legumes. Ambos os sexos podem ingerir a mesma quantidade. As mulheres tendem a consumir mais alimentos destes grupos por serem mais preocupadas com a ingestão de fibras e com a boa forma.
+    
+    8) O consumo de suplementação é mais comum entre homens e mulheres?
+    Se a pessoa, seja homem ou mulher, tiver uma dieta balanceada, com alimentos de todos os grupos alimentares, não há necessidade de suplementação. Ela só é indicada para aquelas pessoas que por, alguma razão, não conseguem se alimentar adequadamente.
+    
+    9) Como os hormônios masculinos e femininos interferem na dieta? Qual a relação deles com os nutrientes que devem ser consumidos?
+    Os hormônios são substâncias responsáveis pela harmonia das nossas funções orgânicas, uma vez que aceleram ou diminuem a velocidade de reações e funções biológicas. São diversos os hormônios que influenciam homens e mulheres. A insulina, presente tanto em homens como em mulheres, possui a função de controlar a taxa de açúcar no sangue (glicose) e tem papel significante no ganho de músculos ou na perda de gordura. Sempre que comemos um carboidrato, nosso organismo usa a insulina para retirar a glicose da corrente sangüínea.
+    
+    Um dos hormônios que mais afetam as mulheres é a chamada serotonina, associada à sensação de bem-estar. Já os homens são dependentes da dopamina, outro hormônio relacionado ao vigor. A falta de serotonina deixa as mulheres mais vulneráveis a doenças como a depressão. Os alimentos que ajudam na produção de serotonina são os carboidratos (pães, massas e doces como o chocolate).
+    
+    Outros hormônios que influenciam bastante as mulheres são o estrógeno e progesterona, que são responsáveis pelas características femininas, e a retenção de líquidos. Devido a essa ação desses hormônios, é necessário acrescentar porções generosas de alimentos diuréticos a dieta. Frutas como a melancia e o melão são ótimas opções.
+    
+    10) Por que pensar só em calorias torna as dietas muito restritivas e, até mesmo, ineficazes?
+    Além das calorias, é preciso pensar na distribuição dos nutrientes na dieta. Homens e mulheres que desejam emagrecer precisam ser reeducados quanto aos hábitos alimentares e a um estilo de vida mais saudável.1) Há mudanças nas proporções de carboidratos, proteínas e gorduras?
+    Independentemente do sexo, as proporções de carboidratos, proteínas e gorduras diferem de pessoa para pessoa. O cálculo ideal leva em conta peso, altura, idade e atividade física de cada um, ou seja, valores são individuais.
+    
+    2) Homens e mulheres queimam calorias da mesma forma?
+    A queima de calorias é influenciada por diversos fatores, como atividade física e estado de saúde, não depende somente do sexo.
+    
+    3) É verdade que as mulheres precisam mais de carboidratos? Por quê?
+    No caso das mulheres, as necessidades (não só de carboidratos, mas de todos os nutrientes) aumentam durante a gravidez para suprir as necessidades do feto. Durante a amamentação, essas necessidades continuam elevadas também para que se mantenha um bom suprimento de leite. Mulheres que não estejam grávidas, amamentando ou praticando exercícios de longa duração não precisam de uma ingestão maior de carboidratos, pois é sabido que seu excesso leva a obesidade.
+    
+    4) E como é a necessidade de proteínas?
+    A recomendação padrão da OMS (Organização Mundial de Saúde) é de que o VET (Valor Energético Total) diário seja composto por 15 30% de proteínas. Sendo assim, como os homens normalmente necessitam de um valor calórico mais elevado que as mulheres, sua ingestão de proteínas acaba sendo maior também, sempre preconizando a porcentagem indicada pela OMS. Deve-se lembrar que atletas e pessoas com condições clínicas diferenciadas necessitam de um aumento nessa porcentagem.
+    
+    5) A necessidade de hidratação varia entre homens e mulheres?
+    A necessidade de hidratação irá variar de acordo, principalmente, com a idade e atividade física. Se o homem ou a mulher praticam algum tipo de atividade física, é necessária uma reposição maior para que se compensem as perdas.
+</p></details>
+
+</section>
+
+
+
+</div>
+
+           </section>
+       
+           
+</div>
+       <br><br>
+       <div class="slide">
+
+        <div class="zoom">           
+    <a href="paginas-sec/homen.html#fb"target="_black"><img class="i4" src="paginas-sec/img/fitnes/home/escondidinho-fit2.jpg " title="batata doce e frango"></a>
+    </div>
+    <div class="zoom">
+   <a href="paginas-sec/homen.html#h1"target="_black"> <img class="i4" src="paginas-sec/img/fitnes/home/h1.jpg" alt="portuguesa" title="hiper calorico"></a>
+    </div>
+    <div class="zoom">
+    <a href="paginas-sec/pizza.html#ab" target="_black"><img class="i4" src="paginas-sec/img/fitnes/home/abu1.jpg" alt="napolitana" title="abumina"></a>
+    </div>
+    <div class="zoom">
+    <a href="paginas-sec/pizza.html#br"target="_black"><img class="i4" src="paginas-sec/img/fitnes/home/br1.jpg" alt="p-mangueta" title="barra proteínas"></a>
+    
+                 </div> 
+                
+           
+    
+            </details>
+
+
+
+            
+                <details>
+            <summary class="suma" ><strong> pizza </strong></summary>
+<br><br>
+
+<div class="divlinha2"><a href="paginas-sec/pizza.html" class="btmenu2"> pizza</a></div>
+<br><br>
+
+
+
+
+
+
+
+
+                <details>
+                    <summary> História da pizza  </summary>
+                    <br><br>
+
+                    <audio src="pg2/audio/pizzahistory.mp3" controls></audio>
+                    <br><br>
+
+
+
+
+                    <section>
+
+<p>
+                        Primeiros marcos da história da pizza
+                        O prato é tão maravilhoso que, na história da pizza, diferentes culturas afirmam ter criado a primeira de todas. Uma comida similar foi preparada primeiro na era Neolítica. Os nomes variavam. Mas uma massa assada com diferentes toppings já era encontrada pelo mundo desde aquela época. Entretanto, foi em Nápoles que a primeira pizza de verdade foi preparada, nos anos de 1600. A ideia é que fosse vendido para que as pessoas comprassem suas fatias e comessem por seus caminhos. O que levou a uma mudança nos hábitos alimentares dos italianos.
+                        A popularidade aumentou quando alguns membros da realeza se apaixonaram pela pizza. Os responsáveis foram o Rei Umberto I e a Rainha Margherita, enquanto eles visitavam a cidade de Nápoles em 1889. Eles queriam conhecer a culinária local. Foi então que o pizzaiolo Raffaele Esposito preparou três opções diferentes. Uma delas feita com molho de tomate, muçarela e manjericão – para homenagear a bandeira italiana. A rainha ficou encantada, por este motivo que este sabor de pizza recebe o seu nome.
+                        
+                        Pizza se torna mais popular pelo mundo
+                        Os reis italianos tiveram um grande papel na popularização da pizza. Contudo, ela se limitava à Itália. A primeira pizzaria nos Estados Unidos foi aberta em 1905, por Gennaro Lombardi. Sua loja era em Manhattan. Pouquíssimo tempo depois, em 1910, o Brasil ganhou sua primeira pizzaria, no bairro do Brás, em São Paulo. Esse alcance maior da pizza se deu porque os italianos estavam emigrando para as américas em busca de melhores empregos. Com isso, na busca por uma fonte de renda, alguns abriam suas pizzarias.
+                        
+                        História da pizza delivery
+                        A moda começou nos Estados Unidos. Após a Segunda Guerra Mundial, os soldados estavam famintos e com vontade de seus pratos favoritos. Entretanto, nem todos poderiam ir até as suas pizzarias favoritas. Foi então que uma loja da cidade de Nova Iorque começou a oferecer o serviço de levar as pizzas. Elas eram armazenadas em containers e transportadas. O delivery mais parecido com o que conhecemos hoje surgiu em Los Angeles alguns anos depois.
+                        Desde então, a praticidade para pedir pizza só aumentou. Não só isso, a qualidade, a segurança na entrega e agilidade também. O que é trabalho de aprimoramento de muitos anos de história da pizza.
+                        
+                        História da Pizza no Brasil
+                        Como dissemos anteriormente, a primeira pizzaria foi aberta no Brasil em 1910, com os imigrantes italianos. O bairro para essa recepção foi o Brás, na cidade de São Paulo. Contudo, no início, os brasileiros não haviam aderido tão bem o novo alimento. Só a partir de 1950 que o prato se tornou popular por todo o país. Hoje, a pizza é parte da cultura brasileira. Para se ter noção, o país produz um milhão de pizzas por dia e o estado de SP é responsável por mais da metade disso. Outro fato interessante é que a cidade de São Paulo é a segunda cidade que mais consome pizza no mundo, perdendo apenas para Nova Iorque. É tanto amor que, desde 1985, temos um dia especial: dia 10 de julho é comemorado o dia da pizza.
+                        E aí, o que achou? Muita coisa bacana, não é mesmo? Não sei você, mas eu fiquei com uma vontade de comer uma pizza marguerita bem quentinha…. Conte o que achou do texto nos comentários e faça o seu pedido de pizza pelo app da Pizza Prime.
+</p>
+
+                    </section>
+                    <section>
+                        <h1>Bitcoin Pizza Day: a história da refeição mais cara de todos os tempos </h1>
+
+                      <p>  Há exatos 11 anos, em 22 de maio de 2010, Laszlo Hanycez registrou o seu nome para sempre na história ao realizar a primeira transação de compra de um produto utilizando uma criptomoeda, adquirindo duas pizzas da rede de pizzarias dos EUA Papa John’s por 10 mil bitcoins.
+
+                        A data virou motivo de comemoração para os entusiastas do criptoativo e passou a ser celebrada como “Bitcoin Pizza Day”.
+                        
+                        Pra entender um pouco melhor a historia, o site MoneyControl.Com conta que nove meses após a histórica compra, o Bitcoin atingiu a paridade com o dólar norte-americano fazendo as duas pizzas valerem US $ 10.000, enquanto no ano de 2015, as duas pizzas estavam avaliadas em US $ 2,4 milhões.
+                        
+                        Em seu 11º aniversário em 2021, o preço do bitcoin atingiu uma alta de $ 63.000. Portanto, as duas pizzas valeriam atualmente US $ 630 milhões. É algo que representa muito bem o processo de valorização de cripto ativos.
+                        
+                        Nesta semana o mercado de criptomoedas apresentou uma forte queda, mas especialistas acreditam numa recuperação no longo prazo.
+</p>
+
+                    </section>
+                </details>
+
+<div class="slide">
+
+    <div class="zoom">           
+<a href="paginas-sec/pizza.html#pf"target="_black"><img class="i4" src="paginas-sec/img/pizza/img/pizza/pizza-de-frango-com-catupiry-2.jpg" alt="frango" title="frango"></a>
+</div>
+<div class="zoom">
+<a href="paginas-sec/pizza.html#pp"target="_black"><img class="i4" src="paginas-sec/img/pizza/img/pizza/pizza-portuguesa-1.jpg" alt="portuguesa" title="portuguesa"></a>
+</div>
+<div class="zoom">
+<a href="paginas-sec/pizza.html#pn" target="_black"><img class="i4" src="paginas-sec/img/pizza/img/pizza/napolitana1.jpg" alt="napolitana" title="napolitana"></a>
+</div>
+<div class="zoom">
+<a href="paginas-sec/pizza.html#pm "target="_black"><img class="i4" src="paginas-sec/img/pizza/img/pizza/p-mangueta1.jpg" alt="p-mangueta" title="mangueta"></a>
+
+             </div> 
+            
+             <div class="zoom">
+                <a href="paginas-sec/pizza.html#pc "target="_black"><img class="i4" src="paginas-sec/img/pizza/img/pizza/pizza-calabresa1.jpg" alt="calabresa" title="calabresa"></a>
+                
+            
+            </div>
+            
+            <div class="zoom">
+                <a href="paginas-sec/pizza.html#pb"target="_black"><img class="i4" src="paginas-sec/img/pizza/img/pizza/Pizza-Com-Borda-Recheada2.jpg" alt="bordas" title="bordas"></a>
+</div>                
+        
+<div class="zoom">
+    <a href="paginas-sec/pizza.html#pbr"target="_black"><img class="i4" src="paginas-sec/img/pizza/img/pizza/Pizza-de-chocolate2.jpg" alt="brigadeiro" title="brigadeiro"></a>
+</div>        
+<div class="zoom">
+    <a href="paginas-sec/pizza.html#fc" class="linka"target="_black"><img class="i4" src="paginas-sec/img/pizza/img/pizza/Receita-de-Pizza-de-Liquidificador-Fácil-1.jpg" alt="facil" title="facil"></a>
+</div>       
+        
+        
+        
+        
+        
+        </div>
+
+
+
+</details>  
+
+
+
+            
+            <details>
+    <summary class="suma" ><strong> restaurante</strong></summary>
+
+<br><br>
+<div class="divlinha2"> <a href="paginas-sec/restaurante.html" class="btmenu2" > restaurante</a></div>
+
+<br><br>
+
+<details>
+    <summary>
+        Onde surgiu o restaurante? 
+    
+    
+    </summary>
+    <br><br>
+    <audio src="pg2/audio/restaurant.mp3" controls></audio>
+    <br><br>
+    <section>
+    
+       <p> Ir ao restaurante, hoje em dia, se tornou um hábito tão comum que parece que esses estabelecimentos sempre existiram. Porém, nem sempre tivemos muitas opções de lugares para comer e, nem de comida diversificada nos estabelecimentos que serviam alguma refeição.
+    
+        Por isso vamos descobrir quando inventaram o restaurante e qual foi o primeiro que surgiu e que se parece como os que temos disponíveis hoje em dia. Para isso, vamos voltar no tempo, no período da Revolução Francesa.
+        
+        Locais que serviam comida antes da Revolução Francesa
+        Antes da Revolução Francesa (1789 – 1799), os franceses tinham algumas opções de estabelecimentos que ofereciam comida, mas eram mais voltados para os viajantes. As estalagens ou hospedarias, tinham horários específicos para servir a refeição, decidida pelo dono do lugar, para todos.
+        
+        As tabernas eram lugares em que as pessoas iam para beber, mas eles tinham um cardápio do dia que era servido em horários específicos. Já os traiteurs serviam refeições uma única vez ao dia, mas as pessoas não podiam escolher os pratos.
+        
+        Por último tinham os cafés, que comercializavam bebidas, como café, chocolate e chá. Além disso, era servido alguns doces e petiscos.
+        
+        Ainda não havia um lugar em que as pessoas pudessem escolher do cardápio o que queriam comer e pagar o valor referente ao que pediam. Mas, com a Revolução Francesa isso mudou.
+        
+        O surgimento do primeiro restaurante
+        Existem duas versões para o surgimento do primeiro restaurante. A primeira diz que ele foi criado em 1765, em Paris, por M. Boulanger. Ele teria sido o primeiro estabelecimento a anunciar sopas restauradoras para o estômago (bouillon restaurant, em Francês).
+        
+        Já a segunda versão diz que o primeiro restaurante foi criado em 1766, em Paris, por Marthurin Roze de Chantoiseau. Ele vendia comidas saudáveis, incluindo a sopa restauradora ─ bouillon restaurant.
+        
+        Sendo assim, o nome restaurante deriva da palavra francesa restaurant. Só que nesses lugares o cardápio era restrito a sopas, sendo um pouco diferente do restaurante que conhecemos.
+        
+        Assim, em 1782, em Paris, Antoine Beaubillers fundou o primeiro restaurante do jeito que conhecemos ─ o La Grande Taverne of London ─, com uma equipe treinada de garçons, um salão elegante, uma cozinha com bons ingredientes e uma boa adega. Dessa forma, os franceses começaram a criar o hábito de comer fora.
+        
+        Alguns anos depois, esse tipo de estabelecimento estava ganhando mercado nos Estados Unidos, com a abertura do primeiro Jullien’s Restaurator em Boston, em 1974. Porém, o costume era que as próprias pessoas se servissem.
+        
+        Só em 1810, o estilo Service à la russe, em que os clientes eram servidos com a comida preparada no prato, começou a ser introduzido na França, depois Inglaterra e outros países. Quem trouxe essa nova forma de servir os clientes foi o príncipe russo Kurakin.
+        
+        Se hoje temos várias opções de restaurantes para irmos almoçar ou jantar, se deve ao fato da Revolução Francesa ter surgido, fazendo com que a classe burguesa ganhasse força, culminando, entre tantas outras coisas, no surgimento dos restaurantes.
+    </p>
+    
+    </section>
+    </details>
+
+
+<div class="slide">
+
+    <div class="zoom">           
+<a href="paginas-sec/restaurante.html#af "target="_black"><img class="i4" src="paginas-sec/img/rest/arozforno1.jpg" alt="frango" title="aroz de forno"></a>
+</div>
+<div class="zoom">
+    <a href="paginas-sec/restaurante.html#cb"target="_black"> <img class="i4" src="paginas-sec/img/rest/camarao1.jpg" alt="portuguesa" title="camarao"></a>
+</div>
+<div class="zoom">
+<a href="paginas-sec/restaurante.html#cg"target="_black" ><img class="i4" src="paginas-sec/img/rest/churasgrego1.jpg" alt="napolitana" title="churasgrego"></a>
+</div>
+<div class="zoom">
+<a><img class="i4" src="paginas-sec/img/rest/costela-mandioca2.jpg" alt="p-mangueta" title="costela-mandioca"></a>
+
+             </div> 
+            
+             <div class="zoom">
+                <a href="paginas-sec/restaurante.html#mcb" target="_black"><img class="i4" src="paginas-sec/img/rest/macaraodebatatas1.jpg" alt="calabresa" title="macarao de batatas"></a>
+                
+            
+            </div>
+            
+            <div class="zoom">
+                <a><img class="i4" src="paginas-sec/img/rest/receita-fritada-batata-calabresa1.jpg" alt="bordas" title="batatas e calabresa"></a>
+</div>                
+        
+<div class="zoom">
+    <a href="paginas-sec/restaurante.html#rf"target="_black"><img class="i4" src="paginas-sec/img/rest/risoto1.jpg" alt="brigadeiro" title="risoto"></a>
+</div>        
+<div class="zoom">
+    <a href="paginas-sec/restaurante.html#s" class="linka"target="_black"><img class="i4" src="paginas-sec/img/rest/salpicao1.jpg" alt="facil" title="salpicao"></a>
+</div>       
+        
+        
+        
+        
+        
+        </div>
+
+
+
+
+       
+                        </details>
+
+
+
+                            <details>
+ <summary class="suma"><strong> lanchonete </strong></summary>
+ <br><br>
+
+ <div class="divlinha2"> <a class="btmenu2" href="paginas-sec/lanchonete.html" > lanchonete</a></div>
+    <br><br>
+                      
+    <div class="slide">
+
+     <div class="zoom">           
+ <a href="paginas-sec/lanchonete.html#h"target="_black"><img class="i4" src="paginas-sec/img/lanchonete/habuque1.jpg" alt="frango" title="habuque"></a>
+ </div>
+ <div class="zoom">
+ <img class="i4" src="paginas-sec/img/lanchonete/panquecas1.jpg" alt="portuguesa" title="panqueca">
+ </div>
+ <div class="zoom">
+ <a href="paginas-sec/lanchonete.html#rm"target="_black" ><img class="i4" src="paginas-sec/img/lanchonete/rissole-de-milho-1.jpg" alt="napolitana" title="rissole de milho"></a>
+ </div>
+ <div class="zoom">
+ <a><img class="i4" src="paginas-sec/img/lanchonete/sanduiche-de-calabresa1.jpg" alt="p-mangueta" title="sanduíche de calabresa"></a>
+ 
+              </div> 
+             
+              <div class="zoom">
+                 <a href="paginas-sec/lanchonete.html#tfr"target="_black"><img class="i4" src="paginas-sec/img/lanchonete/torta de frango2.JPG" alt="calabresa" title="torta de frango"></a>
+                 
+             
+             </div>
+             
+             <div class="zoom">
+                 <a><img class="i4" src="paginas-sec/img/lanchonete/torta-calabresa1.jpg" alt="bordas" title="torta-calabresa"></a>
+ </div>                
+         
+ <div class="zoom">
+     <a  href="paginas-sec/lanchonete.html#cf"target="_black"><img class="i4" src="paginas-sec/img/lanchonete/coxinha1.jpg" alt="brigadeiro" title="coximha"></a>
+ </div>        
+ <div class="zoom">
+     <a href="paginas-sec/lanchonete.html#ec" class="linka"target="_black"><img class="i4" src="paginas-sec/img/lanchonete/esfiha-de-carne-1.jpg" alt="facil" title="esfiha de carne"></a>
+ </div>       
+         
+         
+         
+         
+         
+         </div>
+ 
+
+
+     </details>
+
+
+
+
+         
+                            <details>
+ <summary class="suma"><strong>padarias</strong></summary>
+ <br><br>
+
+ <div class="divlinha2"> <a  class="btmenu2" href="paginas-sec/padaria.html" > padaria</a></div>
+<br><br>
+
+<div class="slide">
+
+    <div class="zoom">           
+<a href="paginas-sec/padaria.html#plc"target="_black"><img class="i4" src="paginas-sec/img/padaria/pao-de-leite-condensado2.jpg" alt="frango" title="pao-de-leite-condensado"></a>
+</div>
+<div class="zoom">
+<a href="paginas-sec/padaria.html#pf"target="_black"><img class="i4" src="paginas-sec/img/padaria/pao-frances1.jpg" alt="portuguesa" title="pao-frances"></a>
+</div>
+<div class="zoom">
+<a  href="paginas-sec/padaria.html#pq" target="_black"><img class="i4" src="paginas-sec/img/padaria/paodequeijo1.jpg" alt="napolitana" title="pao de queijo"></a>
+</div>
+<div class="zoom">
+<a  href="paginas-sec/padaria.html#bt"target="_black"><img class="i4" src="paginas-sec/img/padaria/biscoito toalha1.jpg" alt="p-mangueta" title="biscoito toalha"></a>
+
+             </div> 
+            
+             <div class="zoom">
+                <a href="paginas-sec/padaria.html#bb"target="_black" ><img class="i4" src="paginas-sec/img/padaria/bolinho-de-bacalhau1.jpg" alt="calabresa" title="bolinho-de-bacalhal"></a>
+                
+            
+            </div>
+            
+            <div class="zoom">
+                <a href="paginas-sec/padaria.html#cv"target="_black"><img class="i4" src="paginas-sec/img/padaria/cueca-virada2.jpg" alt="bordas" title="cueca-virada"></a>
+</div>                
+        
+<div class="zoom">
+    <a a href="paginas-sec/padaria.html#pz"target="_black" ><img class="i4" src="paginas-sec/img/padaria/paopzza1.jpg" alt="brigadeiro" title="pao pizza"></a>
+</div>        
+<div class="zoom">
+    <a href="paginas-sec/padaria.html#s"  class="linka"target="_black"><img class="i4" src="paginas-sec/img/padaria/sonho-de-padaria1.jpg" alt="facil" title="sonho-de-padaria"></a>
+</div>       
+        
+        
+        
+        
+        
+        </div>
+
+
+
+     
+     </details>
+     
+                            <details>
+ <summary class="suma">bar</summary>
+ <br><br>
+
+ <div class="divlinha2"> <a href="paginas-sec/bar.html" class="btmenu2"> bar</a></div> 
+  
+ <br><br>
+ 
+<div class="slide" >
+ 
+     <div class="zoom">           
+<a href="paginas-sec/bar.html#vq "target="_black"><img class="i4" src="paginas-sec/img/bar/vinho-quente-2.jpg" alt="frango" title="vinho-quente"></a>
+ </div>
+<div class="zoom">
+<a href="paginas-sec/bar.html#bf"target="_black"> <img class="i4" src="paginas-sec/img/bar/batidaf1.jpg" alt="portuguesa" title="batida"></a><br>
+ </div>
+ <div class="zoom">
+ <a href="paginas-sec/bar.html#cc" target="_black" ><img class="i4" src="paginas-sec/img/bar/cerveja-artesanal1.jpg" alt="napolitana" title="cerveja"></a>
+ </div>
+ 
+ 
+             <div class="zoom" >
+ <a href="paginas-sec/bar.html#ac"target="_black"><img class="i4" src="paginas-sec/img/bar/marula1.jpg" alt="p-mangueta" title="marulla"></a><br>
+ 
+              </div> 
+             
+
+              </div>
+
+     </details>
+     
+     <details>
+         <summary class="suma"><strong>medicinais</strong></summary>
+
+         <br><br>
+         <br><br>
+   
+         <div class="divlinha2"> <a class="btmenu2" href="paginas-sec/medicina.html" > medicinais</a></div>
+         
+         <br><br>
+  
+
+
+
+         <br><br>
+
+ <div class="slide" >
+ 
+     <div class="zoom">           
+ <a><img class="i4" src="paginas-sec/img/medicina/suco1.jpg" alt="frango" title="suco laranja"></a>
+ </div>
+ <div class="zoom">
+<a href="paginas-sec/medicina.html#tr"target="_black"> <img class="i4" src="paginas-sec/img/medicina/tomate1.jpg" alt="portuguesa" title="tomate recheado"></a>
+ </div>
+ <div class="zoom">
+ <a href="" ><img class="i4" src="paginas-sec/img/medicina/vitamina-de-mamao1.jpg" alt="napolitana" title="vitamina-de-mamao"></a>
+ </div>
+ 
+ 
+             <div class="zoom">
+ <a href="paginas-sec/medicina.html#bf"target="_black"><img class="i4" src="paginas-sec/img/medicina/brocoles1.jpg" alt="p-mangueta" title="brocoles"></a>
+ 
+              </div> 
+             <br><br>
+              
+            
+              
+              
+           </div>  <br><br>
+
+           <div class="divlinha2"> <a class="btmenu2" href="paginas-sec/kanabis.html" > canabicas</a></div>
+           <br><br>
+
+           <div class="slide" >
+           
+               <div class="zoom">           
+           <a href="paginas-sec/kanabis.html#bm"target="_black"><img class="i4" src="paginas-sec/img/kan/bolonha1.jpg" alt="frango" title="bolonha"></a>
+           </div>
+           <div class="zoom">
+          <a href="paginas-sec/kanabis.html#b"target="_black"> <img class="i4" src="paginas-sec/img/kan/brisa 2.jpg" alt="portuguesa" title="brisadeiro"></a>
+           </div>
+           <div class="zoom">
+           <a href="paginas-sec/kanabis.html#bc" target="_black" ><img class="i4" src="paginas-sec/img/kan/cookies-marijuana1.jpg" alt="napolitana" title="cookies"></a>
+           </div>
+           
+           
+                       <div class="zoom">
+           <a><img class="i4" src="paginas-sec/img/kan/pizza-canabica1.jpg" alt="p-mangueta" title="pizza"></a>
+           
+                        </div> 
+                       <br><br>
+
+                      
+
+
+</div>  <br><br>  
+             
+ </div></details>
+
+   
+<details>
+<summary>bolos</summary><br>
+
+<div class="divlinha2"> <a class="btmenu2" href="paginas-sec/bolo.html" > bolos </a></div>
+
+<br><br>
+
+<div class="slide">
+
+    <div class="zoom">           
+<a href="paginas-sec/bolo.html#bc"target="_black" ><img class="i4" src="paginas-sec/img/bolo/casamento1.jpeg" alt="frango" title="casamento"></a>
+</div>
+<div class="zoom">
+<a href="paginas-sec/bolo.html#bln"target="_black"><img class="i4" src="paginas-sec/img/bolo/bleiteninho1.jpg" alt="portuguesa" title="leite ninho"></a>
+</div>
+<div class="zoom">
+<a href="paginas-sec/bolo.html#bl"  target="_black"><img class="i4" src="paginas-sec/img/bolo/bolo limão 2.JPG" alt="napolitana" title="limao"></a>
+</div>
+<div class="zoom">
+<a href="paginas-sec/bolo.html#cdr"target="_black"><img class="i4" src="paginas-sec/img/bolo/2recheios1.jpg" alt="p-mangueta" title="2recheios"></a>
+
+             </div> 
+            
+           
+            
+       
+        
+        
+        
+        
+        
+        </div>
+
+
+</details>
+  
+               
+
+     
+</details>
+</details> 
+
+<details>
+<summary>festas</summary><br>
+
+<div class="divlinha2"> <a class="btmenu2" href="paginas-sec/festas.html" > festas </a></div>
+
+<br><br>
+
+<div class="slide" >
+
+    <div class="zoom">           
+<a href="paginas-sec/festas.html#sfc"target="_black"><img class="i4" src="paginas-sec/img/festa/risole-de-frago1.jpg" alt="frango" title="risole-de-frago"></a>
+</div>
+<div class="zoom">
+<a href="paginas-sec/festas.html#tm"target="_black"><img class="i4" src="paginas-sec/img/festa/tortamorag1.jpg" alt="portuguesa" title="tortamorago"></a>
+</div>
+<div class="zoom">
+<a href="paginas-sec/festas.html#bg"target="_black" ><img class="i4" src="paginas-sec/img/festa/Bala-de-gelatina2.jpg" alt="napolitana" title="jujubas"></a>
+</div>
+
+
+            <div class="zoom">
+<a href="paginas-sec/festas.html#pfr"target="_black"><img class="i4" src="paginas-sec/img/festa/Pão-recheado-1.jpg" alt="p-mangueta" title="pao recheio frango"></a>
+
+             </div> 
+            
+           
+
+</details>
+  
+               
+
+     
+</details>
+</details>
+
+
+       
+            
+            
+             
+   
+
+
+                
+
+               <!-- <aside class="prop">
+                    <div style="display: inline-block;">aa
+                
+                        
+                  
+                
+                </div>
+                
+                
+                    </aside>-->
+        </nav>         
+
+
+<h1 style="color: rgb(221, 17, 17);">Top 10 das melhores receitas mundiais </h1>
+
+    <section>
+        
+        <a name="picanha">  <h1 style="color: darkorchid;">Picanha recheada</h1></a> 
+        <nav class="div">
+        <div class="zoom" >   
+        <img  class="i4" src="top/picanha.jpg"  >
+        </div>
+        <div class="zoom " >
+            <img class="i4" src="receita/pik.jpg" alt="">
+        </div>
+   
+        <br><br><br>
+
+            <audio src="audio/Picanha recheada.mp3" controls></audio>
+          
+        <ul>
+           <dl> Ingredientes:</dl>
+
+<dd>1,5 kg de picanha;</dd>
+<dd>sal grosso;</dd>
+<dd>pimenta do reino moída;</dd>
+<dd>1 colher de sopa de páprica;</dd>
+<dd>100 ml de azeite.</dd>
+</dl>
+<dl>Recheio:</dl>
+
+<dd>350 g de muçarela picada;</dd>
+<dd>120 g de bacon picado;</dd>
+<dd>1 pimentão vermelho picado;</dd>
+<dd>2 cebolas picadas;</dd>
+<dd>1 colher de chá de orégano.</dd>
+        </dl>
+<dl>Molho:</dl>
+
+<dd>300 ml de vinho tinto;</dd>
+<dd>1 colher de sopa de geleia de ameixa;</dd>
+<dd>1 pitada de sal;</dd>
+<dd>1 pitada de pimenta caiena.</dd>
+</dl>
+<dl>Passo a passo:</dl>
+
+<dd>1. Retire a gordura da carne e sele a peça dos dois
+     lados numa frigideira com azeite.<br> Depois de retirá-la da frigideira, deixe esfriar por um tempinho.</ul>
+      <dd>
+        2. Use uma faca afiada para fazer um corte na lateral maior da carne. <br> seguida, faça um corte profundo, <br>
+         se fosse um bolso, como na imagem abaixo.
+      </dd> <br> 
+      <dd>
+        3. Vire a carne do avesso, mas sem deixar que ela se rasgue. 
+
+ 
+      </dd><br>
+      <dd>
+        4. Pique as cebolas, pimentão e bacon e frite tudo em uma panela.<br>
+         Transfira o conteúdo da panela para uma tigela contendo a muçarela picada e misture tudo com orégano.<br>
+
+        Recheie a carne com essa mistura. Feche-a com palitos e tempere a capa com páprica,<br> sal grosso e pimenta dos dois lados.  
+      </dd><br>
+      <dd>
+        5. Leve a carne ao forno a 200 ºC com aquecimento superior e inferior acionados por 35 minutos.<br>
+         Depois de pronta, deixe descansar por 10 minutos. <br>
+
+        Para o molho, reduza o vinho tinto e adicione a geleia de ameixa, <br>
+        uma pitada de sal e um pouco de pimenta caiena. Deixe o molho cozinhar por mais 5 minutos. 
+      </dd><br>
+      <dd style="color: crimson;">
+        Uma maneira diferente, mas igualmente deliciosa, de saborear um bom corte de picanha. Bom apetite!
+      </dd><br>
+    </dl>
+    </ul>
+    </section>
+    <section>
+        <a name="Holandesa"> <h1 style="color: blueviolet;"> Torta Holandesa</h1></a>
+        <div class="div">
+        <div class="zoom">
+<img class="i4" src="receita/torta cho hot.jpg" alt=""><br>
+</div>
+<div class="zoom">
+<img class="i4" src="receita/th.jpg" alt="">
+
+</div></div>
+       
+        
+       <audio src="audio/tortaholadesa.mp3" controls></audio>
+       
+       
+       <ol>Ingredientes</ol>
+
+       <li> 4 caixas (de 200g cada) de creme de leite<l1>
+        <li>1 caixa de Leite condensado</li>
+        <li>3 colheres (sopa) cheias de açúcar refinado</li>
+        <li>1 envelope de gelatina sem sabor (12g)</li>
+        <li>1/4 xícara de água (para hidratar a gelatina)</li>
+        <li>200 a 300g de chocolate ao leite, ou meio amargo ou branco</li>
+        <li>Bolacha calipso, ou palitos de chocolate ou bis para decorar as laterais</li>
+       <li> 1 pacote de biscoito waffer ou biscoito maria ou uma camada fina de pão de ló</li>
+       <li> 1 colher (sobremesa) de essência de baunilha</li>
+
+
+<ol>       Modo de preparo</ol>
+       <li>1. Coloque as caixinhas de creme de leite na geladeira de um dia para o outro para adquirir a consistência ideal</li>
+
+       <li>2. Enfeite as laterais de uma forma redonda de aro removível (de 22 a 25 cm de diâmetro) com bis, ou palitos de chocolate ou bolachas calipso (não precisa preencher todo espaço)</li>
+
+       <li>3. Forre o fundo desta mesma forma com wafers, arrumando para que todo espaço seja preenchido – recorte os waffers de modo a encaixar nos espaços irregulares</li>
+
+      <li>4. Despeje a gelatina em 1/4 de xícara de água e mexa bem, leve ao micro-ondas de 10 a 20 segundos ou aqueça em banho-maria até ficar homogênea (vide instruções do rótulo da gelatina)</li>
+
+      <li>5.  Em um recipiente, misture 1 caixa de creme de leite, 1 caixa de leite condensado, a essência da baunilha e a gelatina hidratada
+        Mexa à mão e reserve</li>
+
+        <li>6. Utilize 2 caixas de creme de leite e 1 colher de açúcar para bater na batedeira o chantilly (velocidade alta)</li>
+
+        <li>7. Após dá o ponto de chantilly, junte à mistura do item 4, mexa à mão e despeje sobre os waffers que forram o fundo da forma
+        Leve ao freezer por cerca de 3 horas</li>
+
+        <li>8. Passadas as 3 horas de freezer, é hora de preparar a cobertura (ganache) leve ao fogo brando 1 caixa de creme de leite com 250 g de chocolate em barra (meio amargo, ao leite ou branco)</li>
+       <li>9. Após derreter o chocolate, está pronto para cobrir o creme branco, finalizando a torta</li>
+       <l1>10. Leve ao freezer mais uma vez e mais tarde desenforme a torta passando uma faca nas laterais e elevando o fundo da forma – não remova o fundo da forma
+        Sobreponha a torta numa boleira com pé e leve à geladeira</li>
+        
+
+    </section>
+  <section>
+    <a name="panqueca"><h1> <h1> PANQUECA <br> AMERICANA  </h1></a>
+      <div class="div">
+      <div class="zoom">
+        <img class="i4"  src="img/rece/panqu2.jpg" alt="">
+</div>
+        <div class="zoom">
+        <img class="i4" src="img/rece/panquekas.jpg" alt="">
+        </div></div>
+       
+      <h2>  Com frutas, mel, xarope de maple ou geleia.
+           Essas panquecas bem fofas, cheias de furinhos,
+            são perfeitas para o café da manhã do fim de semana.</h2>
+<audio src="audio/PANQUECA AMERICANA (PANCAKES).mp3" controls></audio>
+       <ul class="ul"> INGREDIENTES</ul>
+       <li> 1 ½ xícara (chá) de farinha de trigo</li>
+       <li> 2 ½ colheres (sopa) de açúcar</li>
+      <li>  1 pitada de sal</li>
+      <li>  1 pitada de canela em pó</li>
+      <li>  2 ovos</li>
+      <li>  1 xícara (chá) de leite (ou leitelho)</li>
+      <li>  2 ½ colheres (sopa) de óleo (ou manteiga derretida)</li>
+     <li>   2 colheres (chá) de fermento em pó</li>
+     <li>   1 pitada de bicarbonato de sódio</li>
+    <li>    óleo ou manteiga para untar a frigideira</li>
+
+
+
+  <ol>  MODO DE PREPARO</ol>
+<li>1 Numa tigela grande, misture a farinha, o açúcar, a canela em pó e o sal.</li>
+
+<li>2 Numa tigela pequena, quebre um ovo de cada vez e junte à mistura de secos – se um estiver estragado você não perde a receita. Acrescente o leite, o óleo e misture bem com o batedor de arame até ficar liso.</li>
+
+<li>3 Deixe a massa descansar por 10 minutos. Adicione o fermento em pó, o bicarbonato e misture bem.</li>
+
+
+<li>4 Leve uma frigideira antiaderente ao fogo médio. Quando aquecer, com um pedaço de papel toalha, unte o fundo da frigideira com óleo – repita essa operação a cada leva. Coloque duas conchas da massa no centro da frigideira, abaixe o fogo e deixe por 2 minutos até a lateral da panqueca começar a firmar e formarem bolhas no centro da massa.</li>
+
+<li>5 Com uma espátula, vire a panqueca e deixe por mais 1 minuto para dourar o outro lado por igual. Transfira para um prato e repita com o restante da massa, untando a frigideira a cada panqueca. Sirva as panquecas ainda mornas com pera cozida no micro-ondas, manteiga, geleias, frutas, mel ou maple.</li>
+
+<h2 style="color: crimson;"> PRA VARIAR<br>
+Você pode substituir a canela em pó por raspas de laranja ou extrato de baunilha a gosto.
+</h2>
+    </section>
+    <section>
+        <a name="mqueijo">    <h1>
+    Macarrão com Queijo - Mac and Cheese
+              </h1></a>
+
+              <div class="div"> 
+        <div class="zoom">
+        <img class="i4" src="img/rece/macaracqueijo.jpg" alt="">
+        </div><div class="zoom">
+        <img class="i4" src="img/rece/macarrao_queijo2.jpg" alt="">
+        </div>
+        </div>
+  
+<h2>
+    O macarrão com queijo, chamado de mac n' cheese em inglês, é uma receita cremosa e fácil de fazer! Confira como fazer essa delícia que rende bem e fica pronta em menos de 1 hora: 
+</h2>
+<audio src="audio/Macarrão com Queijo - Mac and Cheese.mp3" controls></audio>
+    <ol> Ingredientes</ol>
+
+    <li>500 gramas de macarrão do tipo parafuso ou penne cozido al dente</li>
+ <li>   4 xícaras de chá de creme de leite fresco</li>
+<li>    1 colher de sopa de manteiga</li>
+<li>    1 colher de café de noz-moscada em pó</li>
+<li>    Meia cebola picada bem fininho</li>
+<li>    8 colheres de sopa de queijo parmesão ralado</li>
+<li>    400 gramas de queijo muçarela ralado</li>
+<li>    Sal e pimenta-do-reino a gosto</li>
+
+<ol>Modo de Preparo</ol>
+<li>1. Numa tigela misture o macarrão, o creme de leite fresco, a noz-moscada, o sal, a pimenta-do-reino, a cebola picada, o queijo parmesão e a muçarela.</li>
+<li>2. Coloque em um refratário untado com manteiga e leve para o forno pré-aquecido a 180 graus Celsius por 25 a 30 minutos ou até que fique totalmente gratinado sem ficar ressecado por dentro.</li>
+<li>3. Se quiser, pode acrescentar pedacinhos de bacon frito.</li>
+    
+
+    </section>
+    <section>
+ <h1> CHILLI MEXICANO </h1>
+        
+ <div class="div">
+ <div class="zoom">
+        <img class="i4"  src="img/rece/chilli-mexicano-.jpg" alt="">
+        </div><div class="zoom">
+        <img class="i4" src="img/rece/Chile_con_carne2.jpg" alt="">
+        </div></div>
+       
+
+        <h2><span style="color: fuchsia;">curiosidade</span>
+            <br>Como surgiu a receita de chilli mexicano<br>
+            A teoria mais aceita sobre a origem do prato é de que o chilli com carne (chili con carne)
+             como é conhecido em espanhol nasceu na década de 1880 em Ensenada, no México, como um meio de prolongar a duração da pouca carne disponível aos menos abastados.
+
+        </h2>
+
+        <audio src="audio/CHILLI MEXICANO.mp3" controls></audio>
+       <ol> INGREDIENTES</ol>
+        <li>1 kg de carne moída (patinho)</li>
+<li>        250 g de feijão rosinha</li>
+    <li>    250 g de feijão rajado</li>
+        <li>250 g de feijão roxinho ou carioquinha</li>
+        <li>4 tomates médios sem casca, muito bem picadinhos ou batidos no liquidificador</li>
+            <li> 1 caixa de 520 g de polpa de tomate</li>
+                <li>1/2 pimentão vermelho cortado em cubos pequenos</li>
+                    <li>1/2 pimentão amarelo cortado em cubos pequenos</li>
+                        <li>1/2 maço de coentro</li>
+                            <li> 2 cebolas médias bem picadas</li>
+ <li>6 dentes de alho bem amassados</li>
+     <li>2 pimentas vermelha (fresca), sem as sementes</li>
+         <li>1 colher (café) de cominho</li>
+             <li>  1 litro de água fervente</li>
+                 <li>sal a gosto</li>
+                     <li>mussarela ralada a gosto</li>
+                         <li>nachos de milho ou pão italiano</li>
+     
+                         <ul class="ul">MODO DE PREPARO</ul>
+                         <li>Cozinhe todo o feijão em uma panela de pressão por 15 minutos (15 minutos de pressão). Escorra todo o caldo e reserve apenas o feijão cozido.</li>
+                         <li>Em uma panela grande doure o alho e a cebola em óleo ou azeite.</li>
+                         <li>Acrescente a carne moída, sempre mexendo para deixá-la soltinha. Cozinhe por 5 minutos.</li>
+                         <li>Adicione os tomates sem pele picados (ou batido no liquidificador), a polpa de tomate, o pimentão, o coentro, o sal e a pimenta vermelha.</li>
+                         <li>Deixe cozinhar por aproximadamente 3 minutos.</li>
+                         <li>Acrescente o feijão.</li>
+                         <li>Acrescente a água fervente a seu gosto, para deixar mais seco, menos água, para deixar mais molhado (para comer com pão italiano, por exemplo) coloque mais água.
+                         Acerte o sal.</li>
+                         <li>Deixe cozinhar de 15 a 20 minutos em fogo baixo e com a panela tampada. Mexa com certa frequência e não deixe o feijão ficar muito cozido.</li>
+                         <li>Sirva bem quente em pratos fundos ou cumbucas de sopa. Salpique mussarela ralada por cima.</li>
+                        <li> Para acompanhar, nachos de milho ou pão italiano e uma boa taça de vinho  </li>                 
+
+    </section>
+    <section>
+        <a name="Omuraisu">   <h1>
+            Receita de Omuraisu (Omelete com Arroz) 
+        </h1></a>
+
+        <div class="div">
+        <div class="zoom">
+        <img class="i4" src="img/rece/Omurice-Foto-Stockvalt.jpg" alt="">
+        </div><div class="zoom">
+<img class="i4" src="img/rece/Omelete-de-Arroz-Japones-Omurice2.jpg" alt="">
+</div></div>
+        
+        <h2><span style="color: fuchsia;">curiosidade</span>
+            <br>
+            Omurice (Arroz frito embrulhado com Omelete)
+            Omuraisu ou Omurice (オムライス) é um prato ocidental que foi adaptado ao paladar japonês (Yoshoku). É um prato muito popular no Japão, Coreia e Taiwan e consiste em Omelete com arroz frito com cobertura de ketchup. Segundo contam, o Omuraisu foi servido pela primeira vez em 1902, em um restaurante de estilo ocidental chamado Renga-tei, no distrito de Ginza, em Tóquio.
+            
+            O proprietário disse que a ideia surgiu a partir de uma receita antiga de Chakin-Zushi (arroz de sushi enrolado em uma folha fina de omelete). O recheio do Omuraisu pode variar conforme a receita, mas normalmente consiste no Raisu Chikin (arroz com pedaços de frango e temperos), mas pode ser usado outros tipos de carnes, vegetais e outros ingredientes em seu preparo.
+        </h2>
+
+<audio src="audio/Receita de Omuraisu (Omelete com Arroz).mp3" controls></audio>
+        <ol>Ingredientes para o arroz</ol>
+<li>        280 g de arroz cozido</li>
+    <li>   130 g de frango</li>
+        <li>   Sal e pimenta a gosto</li>
+            <li> 1 dente de alho</li>
+                <li>  1/4 da cebola</li>
+                    <li>  4 Champignons</li>
+                        <li>   1 colher de sopa de vinho branco</li>
+                            <li>   200 g de molho de tomate</li>
+ <li>   1/2 cubo de caldo de carne</li>
+     <li>  1 folha de louro</li>
+         <li>  30 g ervilhas congeladas</li>
+             <li>   Azeite </li>
+
+            <ol> Ingredientes para a Omelete</ol>
+<li> 4 ovos</li>
+           
+    <li>2 colheres de chá de creme de leite</li>
+        <li>Azeite</li>
+            <li>Sal e pimenta a gosto</li>
+                <li>Salsinha desidratada</li>
+                    <li>1 colher de sopa de Ketchup para decorar 4 ovos</li>
+
+
+                   <ol> Modo de Fazer</ol>
+                    <li>Corte o frango em pedaços e tempere com um pouco de sal. Pique a cebola e o alho. Jogue água fervida sobre as ervilhas, escorra e tempere com sal. Em outro recipiente, adicione dois ovos, misturando-os com um garfo. Em seguida, acrescente o creme de leite, o sal e a pimenta, misturando bem.</li>
+                    
+                    <li>Em uma frigideira, acrescente o azeite e frite o alho e a cebola até que fiquem douradas. Acrescente os pedaços de frango e os Champignons. Deixe fritar por alguns minutos e depois adicione o molho de tomate, o caldo de carne picado, a folha de louro e as ervilhas. Misture e corrija o sal se necessário.</li>
+                    
+                    <li>Quando o frango estiver bem frito, acrescente o arroz cozido e misture bem. Reserve. Em outra frigideira, acrescente um pouco de azeite e adicione a mistura de ovos para o preparo da omelete. Depois que a omelete estiver pronta, basta colocar o arroz reservado como recheio e decorar com o Ketchup.  </li>       
+
+    </section>
+    <section>
+
+    <a name="curyy"> <h1>
+    Peixe ao molho curry indiano
+</h1></a>
+<div class="div">
+    <div class="zoom">
+        <img class="i4" src="img/rece/peixe idiano.jpg" alt="">
+
+    </div>
+    <div class="zoom">
+        <img class="i4" src="img/rece/peixe idiano2.jpg" alt="">
+
+    </div>
+
+</div>
+<audio src="audio/Peixe ao molho curry indiano.mp3" controls></audio>
+
+<h2>
+    <span>curiosidade</span><br>
+
+        A culinária oriental é aromática, picante e muito colorida: uma verdadeira explosão de sabores! Além disso está associada a muitos benefícios ao nível da saúde, por usar temperos que estão associados ao bom funcionamento do organismo e longevidade. Por essa razão no TudoReceitas ensinamos você a preparar esta receita de peixe ao molho curry indiano, um prato simples e delicioso que com certeza você quererá repetir! Confira abaixo todos os detalhes e experimente.
+</h2>
+ <ol style="font-size: 25px;">ingredientes</ol>
+    <li>4 filés de peixe branco </li>
+    <li>300 mililotros de leite de coco</li>
+    <li>2 cebolas pequenas </li>
+    <li>½ colher de café de sementes de mostarda ou mostarda em pasta  </li>
+    <li> 3 colheres de café de cominho (de preferência em grão) </li>
+    <li> 2 dentes de alho </li>
+    <li>1 colher de café de gengibre em pó  </li>
+    <li>1 pimentão verde </li>
+    <li> 3 colheres de café de curry </li>
+    <li> 2 colheres de café de páprica ardida ou pimenta caiena </li>
+    <li>2 colheres de café de coentro (de preferência em semente)  </li>
+    <li>1 colher de café de cúrcuma (de preferência em pó) </li>
+    <li>½ xícara de água (120 mililitros) </li>
+    <li> 1 fio de azeite de oliva </li>
+    <li>1 pitada de sal </li>
+    <h3 style="color: rgb(228, 47, 47);">
+        Dica: Você pode usar qualquer peixe branco para esta receita. Nós escolhemos usar tilápia.
+    </h3>
+<ol>Modo de Fazer </ol>
+<li>1 Prepare esta receita de curry de peixe indiano começando por cortar cada filé de peixe em 3 pedaços iguais </li>
+<li>2 Em seguida doure as sementes de mostarda e de cominho numa frigideira, para ativar o sabor e as propriedades medicinais. Reserve. Num almofariz esmague bem o coentro, depois acrescente a páprica ou pimenta caiena, a cúrcuma, o sal e a água e misture muito bem até obter uma pasta para o curry de peixe. Reserve </li>
+<li>3 Prepare os legumes: corte os tomates em quartos, a cebola e o pimentão em cubinhos e amasse ou pique finamente os alhos. </li>
+<li> 4 Comece cozinhando esta receita de peixe ao molho curry indiano: leve ao fogo uma frigideira com o azeite e refogue a cebola com o pimentão, o gengibre, o curry e os alhos.</li>
+<li>5 Quando a cebola ficar transparente adicione a mistura do almofariz e misture muito bem com os ingredientes da frigideira. Desligue o fogo e reserve por 1 minuto. </li>
+<li>6 O passo seguinte desta receita de peixe ao molho curry indiano é colocar o peixe numa panela junto com o tomate e o refogado anterior, as sementes de mostarda e de cominho. Cubra com o leite de coco e a água. </li>
+<li>7 Leve a panela ao fogo médio e, quando ferver, baixe o fogo. Deixe ficar por mais 15 minutos, para o peixe terminar de cozinhar. Depois desligue o fogo e deixe o curry repousar tampado por 30 minutos, para que os sabores fiquem bem concentrados. </li>
+<li>8 Depois disso está pronto seu peixe ao molho curry indiano! Sirva acompanhado de arroz branco e desfrute desta explosão de sabores! Diga nos comentários o que você achou e suba foto do seu curry, vamos gostar de ver como ficou! </li>
+
+
+    </section>
+<section>
+   <a name="esrusso"> <h1>
+        estrogonofe russo
+    </h1></a>
+    <div class="div">
+        <div class="zoom">
+            <img class="i4" src="img/rece/estragonofruso.jpg" alt="">
+        </div>
+        <div class="zoom">
+            <img class="i4" src="img/rece/stragonofruso2.jpg" alt="">
+        </div>
+    </div>
+    <audio src="audio/estrogonofe russo.mp3" controls></audio>
+    <h2><span>curiosidade</span><br>
+        A Rússia, sede da Copa, é o maior país do mundo e possui uma cultura muito rica, inclusive na área gastronômica. Por falar em comida, uma receita tradicional russa inspirou um prato muito querido no Brasil: o estrogonofe. Apesar da forte influência, o prato brasileiro ganhou diversas mudanças, mas que tal aprender a preparar o verdadeiro estrogonofe russo?
+        <br> 
+        A origem do prato é incerta, mas muitos historiadores gastronômicos acreditam que o prato como conhecemos — feito com pedaços de carne, creme de leite, cebolas e cogumelos — tenha sua origem na Rússia do século XIX. O prato foi preparado por um chef francês que trabalhava para a família do conde Pavel Stroganov. A receita original consistia de creme azedo (também conhecido como smetana) e se chamava estrogonofe de carne com mostarda. Com o tempo, o chef francês acrescentou pitadas da culinária francesa: páprica e cogumelos. Já a adição de ingredientes como molho de tomate ou ketchup foi ideia dos americanos. Confira a receita completa do estrogonofe russo abaixo e se delicie!
+    </h2>
+
+
+    <ol>Ingredientes do estrogonofe russo</ol>
+<li>1 caixinha de creme de leite</li>
+<li>500 g de carne</li>
+<li>2 cebolas grandes</li>
+<li>3 cogumelos frescos laminados</li>
+<li>2 colheres (sopa) de colhada fresca</li>
+<li>1 colher (sopa) de mostarda</li>
+<li>sal, páprica e endro a gosto</li>
+<li>2 colheres (sopa) de manteiga</li>
+<li>1 fio de óleo</li>
+
+<ol>Modo de preparo</ol>
+<li>O primeiro passo para preparar o seu estrogonofe russo (ou stroganov) é escolher uma carne de boa qualidade.</li>
+<li>Em seguida, corte-a em tiras finas de aproximadamente 0,5 cm de espessura.</li>
+<li>Tempere-as levemente com sal e reserve.</li>
+<li>Em uma frigideira larga, coloque a manteiga e o óleo e espere ficar quente.</li>
+<li>Adicione a cebola cortada em fatias e refogue em fogo médio até ela ficar levemente dourada.</li>
+<li>Acrescente os cogumelos frescos laminados e refogue por mais alguns minutos até dourar.</li>
+<li>Na sequência, coloque as tiras de carne temperadas e cozinhe em fogo médio para alto apenas para selar.</li>
+<li>Despeje o creme de leite, a coalhada fresca e a mostarda e misture bem.</li>
+<li>Tampe a frigideira e deixe cozinhar em fogo baixo por aproximadamente 15 minutos, para apurar o sabor.</li>
+<li>Finalize acertando o sal, acrescente a páprica e o endro picadinho.</li>
+<span><h2>Sirva quente!</h2></span>
+
+</section>
+<section>
+  <a name="monsieur">  <h1>
+        
+
+Croque Monsieur</h1></a>
+<div class="div">
+    <div class="zoom">
+        <img class="i4" src="img/rece/croquemonsieur-paris.jpg" alt="">
+    </div>
+    <div class="zoom">
+        <img class="i4" src="img/rece/croquemonsieur-paris2.jpg" alt="">
+    </div>
+
+</div>
+<audio src="audio/Croque Monsieur.mp3" controls></audio>
+<h2><span>curiosidade</span><br>
+    Sobre a origem do nome, teria surgido por acaso, em um café parisiense. Um garçom, ao entregar o prato, disse “Le croque, monsieur”, ou seja, “O pão tostado, senhor”. O cliente, no entanto, entendeu que o nome do lanche era 'Le Croque Monsieur', e assim o sanduíche ficou conhecido mundialmente.
+</h2>
+
+<ol>INGREDIENTES</ol>
+<li>16 fatias de pão de forma</li>
+<li>2 ovos</li>
+<li>300 g de creme de leite sem soro</li>
+<li>Presunto em fatias</li>
+<li>Queijo gruyère ou ementhal ralado grosso</li>
+<li>Noz-moscada e sal a gosto</li>
+
+
+<ol>MODO DE PREPARO</ol>
+<li>Em uma tigela junte os ovos com o creme de leite, o sal e a noz-moscada.</li>
+<li>Misture bem até formar um creme homogêneo. Reserve.</li>
+<li>Em uma assadeira coloque 8 fatias de pão de forma e passe metade do creme por cada uma das fatias até que fiquem bem úmidas.</li>
+<li>Coloque por cima as fatias de presunto e o queijo ralado.</li>
+<li>Cubra com as fatias de pão restante, e por cima coloque a outra metade do creme e cubra com mais queijo ralado.</li>
+<li>Leve ao forno pré-aquecido até que o queijo derreta ou até que doure.</li>
+
+<h2><span>
+INFORMAÇÕES ADICIONAIS</span><br>
+Obs.: Se não encontrar o queijo da receita pode utilizar o gouda, ou ainda queijo prato ou mussarela. </h2>
+
+
+
+
+
+
+
+
+
+
+</section>
+<section>
+<a name="feijoada"><h1>feijoada</h1></a>
+<div class="div">
+    <div class="zoom">
+        <img class="i4" src="img/rece/fejoada.jpg" alt="">
+    </div>
+<div class="zoom">
+    <img class="i4" src="img/rece/fejoada2.jpg" alt="">
+</div>
+</div>
+    <h2><span>curiosidade</span><br> Qual é a origem da feijoada?
+    Resultado de imagem para feijoada curiosidades
+    Os portugueses não desprezavam essas carnes. E o que os escravos comiam era basicamente feijão com farinha. A feijoada (prato com técnica europeia, similar aos vários tipos de cozidos, como os de Portugal, Espanha, França, e outros) teria se desenvolvido no final do século XIX, em restaurantes cariocas.
+</h2>
+<audio src="audio/feijoada.mp3" controls></audio>
+
+<ol>INGREDIENTES</ol>
+<li>1 Kg de feijão preto</li>
+<li>100 g de carne seca</li>
+<li>70 g de orelha de porco</li>
+<li>70 g de rabo de porco</li>
+<li>70 g de pé de porco</li>
+<li>100 g de costelinha de porco</li>
+<li>50 g de lombo de porco</li>
+<li>100 g de paio</li>
+<li>150 g de lingüiça portuguesa</li>
+
+<ol>Tempero:</ol>
+<li>2 cebolas grandes picadinhas</li>
+<li>1 maço de cebolinha verde picadinha</li>
+<li>3 folhas de louro</li>
+<li>6 dentes de alho</li>
+<li>Pimenta do reino a gosto</li>
+<li>1 ou 2 laranjas</li>
+<li>40 ml de de pinga</li>
+<li>Sal se precisar</li>
+
+
+<ol>MODO DE PREPARO</ol>
+<li>Coloque as carnes de molho por 36 horas ou mais, vá trocando a água várias vezes, se for ambiente quente ou verão, coloque gelo por cima ou em camadas frias.</li>
+
+<li>Coloque para cozinhar passo a passo: as carnes duras, em seguida as carnes moles.</li>
+
+<li>Quando estiver mole coloque o feijão, e retire as carnes.</li>
+
+<li>Finalmente tempere o feijão.</li>
+
+<h2 > <span>ACOMPANHAMENTOS </span><br>
+Couve, arroz branco, laranja, bistecas, farofa, quibebe de abóbora, baião de dois, bacon, torresmo, lingüicinha e caldinho temperado - copinhos.
+</h2>
+<h2 style="color: deeppink;">INFORMAÇÕES ADICIONAIS</h2>
+<audio src="audio/INFORMAÇÕES ADICIONAIS.mp3" controls></audio>
+<p >A feijoada é um prato típico do Rio de Janeiro e é muito consumido em todo Brasil. Apesar de ser um prato com muitas variações, a típica feijoada completa é aquela que leva todas as carnes salgadas (costela, linguiças variadas, carne seca, pé, orelha, rabo, lombo, bacon) e é servira com rodelas de laranja, couve refogada no alho, arroz e farofa.  Por ser um prato considerado pesado, há quem prefira fazer a feijoada simples: para isso, você pode apostar em usar apenas linguiça paio, bacon e carne seca, deixando seu prato de feijoada mais leve sem perder sabor.
+     Para quem está de dieta e quer apostar em uma feijoada light, invista na feijoada vegana ou na feijoada vegetariana! Nela não vão as carnes, é supernutritiva e saborosa, além de ser mais leve!   Se você quer ir além da feijoada tradicional, existem muitas variações do prato que você pode testar como feijoada branca, feijoada de frutos do mar, feijoada mineira, feijoada de camarão e até mesmo pratos similares como a dobradinha ou o cassoulet, conhecido como feijoada francesa! Esta receita serve feijoada para 20 pessoas, se você vai cozinhar para muitas pessoas, multiplique os ingredientes por 2,5, por exemplo: para uma feijoada para 50 pessoas, você precisa usar 2,5 kg de feijão, para uma feijoada para 100 pessoas seriam 5 kg de feijão e assim sucessivamente, siga esta proporção para o restante dos ingredientes que você não vai errar nunca! 
+     
+</p>
+</section>
+
+<footer style="border: 1px solid rgb(233, 45, 45);width: 100%; height: 100px; border-radius: 1px;background-color: #6d3180;">
+    
+  
+    
+    <div id="d1" style="padding: 30px; padding-left:20px;" >
+            
+        <a   class="btmenu" href="index.html"  >inicio</a>
+    <a class="btmenu" href="" target="">sobre</a>
+    <a class="btmenu" href="">afiliados</a>
+    <a class="btmenu" href="">trabalhe com nosco</a>
+    
+
+ 
+ </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/.../dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+   </body>
+   </html>

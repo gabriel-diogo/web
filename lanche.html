@@ -1,0 +1,803 @@
+
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>cooking recipes</title>
+                
+       <link rel="stylesheet" href="all.css">
+       <script src="all.js"></script>
+       <script src="https://kit.fontawesome.com/c1633bff86.js" crossorigin="anonymous"></script>
+       <link href="https://cdn.jsdelivr.net/.../dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+       <script src="https://cdn.jsdelivr.net/.../dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+       <script
+       src="https://code.jquery.com/jquery-3.6.0.js"
+       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+       crossorigin="anonymous"></script>
+    <style>
+        body{
+            background-image: url('img/fundo/lanche/lanche5.jpg');
+            background-size: 100%;
+            background-attachment: fixed;
+            text-shadow: 1px 1px 1px rgb(27, 34, 26);
+            background-repeat: repeat-y;
+        }
+    </style>            
+ 
+   </head>
+   <body>
+    
+    
+    <header>
+            
+         <img class="n4" src="img/log.jpg" >
+        
+       
+    
+    
+      
+    
+    
+       <nav id="menu">
+           <div id="div1">
+            
+               <a class="bitmenu1" href="index.html">inicio</a>
+           <a class="btmenu" href="cafe.html" target="">café </a>
+           <a class="btmenu" href="almoco.html">almoço</a>
+           <a class="btmenu" href="lanche.html">lache</a>
+           <a class="btmenu" href="janta.html">jantar</a>
+           <a class="btmenu" href="saldavel.html">saldável</a>
+           
+           <marquee behavior="alternate" loop="3">  <h1 id="h" style="color: yellowgreen;">welcome cooking recipes !!!</h1></marquee>
+        
+        </div>
+      
+
+ <br><br><br>
+           
+       <div class="pp">
+       
+    
+            
+        <nav class="menuc" id="nav">
+            
+            <input type="text" id="pes" onkeyup="pesquisar()"  placeholder="pesquisa..." title="digite">
+            
+            <ul id="menu" class="li">
+        
+                <input type="button" value="pesquisar" onclick="mostra('dess')" class="botao"/>
+                <div id="dess" style=" overflow-y: scroll;height: 200px; " >
+                
+                
+    
+    
+                <li><a href="cafe.html#queijo"target="_black">queijo</a></li>
+                <li><a href="#feijoada" target="_black">feijoada</a></li>
+                <li><a href="almoco.html#aroz" target="_black">Arroz de linguiça com milho</a></li>
+                <li><a href="cafe.html#nmalu"target="_black">bolo nega Maluca</a></li>
+                <li><a href="cafe.html#cap "target="_black">cappuccino</a></li>
+                <li><a href="cafe.html#pqueijo"target="_black">pao de queijo </a></li>
+                <li><a href="cafe.html#requeijão "target="_black">requeijão</a></li>
+                <li><a href="cafe.html#biscoitoa "target="_black">biscoito amanteigado</a></li>
+                <li><a href="cafe.html#pave"target="_black">PAVÊ DE PRESTÍGIO </a></li>
+                <li><a href="cafe.html#bolmilho"target="_black">bolinho-de-milho</a></li>
+                <li><a href="cafe.html#rosca"target="_black">ROSCA FOFINHA </a></li>
+                <li><a href="paginas-sec/kanabis.html#canabis"target="_black">manteiga canabica</a></li>
+                <li><a href="#picanha"target="_black">Picanha recheada  </a></li>
+                <li><a href="#Holandesa"target="_black">torta holadesa </a></li>
+                <li><a href="#panqueca"target="_black">panqueca</a></li>
+                <li><a href="#mqueijo"target="_black">macarao com queijo </a></li>
+                <li><a href="#Omuraisu"target="_black">Omuraisu </a></li>
+                <li><a href="#curyy"target="_black">curry</a></li>
+                <li><a href="#esrusso">estrogonofe </a></li>
+                <li><a href="#monsieur"target="_black"> monsieur</a></li>
+                <li><a  href="paginas-sec/bolo.html#rc"target="_black">rocabole</a></li>
+                <li><a href="cafe.html#tcok"target="_black">torta cookie</a></li>
+                
+                <li><a href="almoco.html#hd"target="_black">hot-dog-forno </a></li>
+                <li><a href="almoco.html#ome"target="_black">omelete-de-forno</a></li>
+                <li><a href="almoco.html#fj"target="_black">feijao tropeiro</a></li>
+                <li><a href="almoco.html#escamarao"target="_black">estrogonofe-de-camarao </a></li>
+                <li><a href="almoco.html#tport"target="_black">torta-portuguesa</a></li>
+                <li><a href="almoco.html#pvinho"target="_black">picanha ao vinho </a></li>
+                <li><a href="almoco.html#pf"target="_black">pastelao de forno</a></li>
+                <li><a href="almoco.html#mf"target="_black">macarao de Forno</a></li>
+                <li><a href="almoco.html#lbf"target="_black"> Lasanha de batata com frango </a></li>
+               
+                <li><a href="lanche.html#va"target="_black">vitamina de amedoim </a></li>
+                <li><a href="lanche.html#bpm"target="_black">bolo pe de moleque</a></li>
+                <li><a href="lanche.html#paor"target="_black">pao-recheado</a></li>
+                <li><a href="lanche.html#thd"target="_black">torta hot-dog</a></li>
+                <li><a href="lanche.html#ef"target="_black">empadao-frango</a></li>
+                <li><a href="lanche.html#pcl"target="_black">pao de cebola</a></li>
+                <li><a href="lanche.html#sf"target="_black">saduiche de forno</a></li>
+                <li><a href="lanche.html#jpz"target="_black">joelho de pizza</a></li>
+                <li><a href="lanche.html#bbt"target="_black">bombom-de-travessa</a></li>
+                <li><a href="lanche.html#bca"target="_black">bolo de amendoim</a></li>
+               
+                <li><a href="janta.html#lff"target="_black">lasanha-de-frango</a></li>
+                <li><a href="janta.html#pcm"target="_black">PANQUECA de carne moida</a></li>
+                <li><a href="janta.html#ps"target="_black">Pizza-de-Sardinha</a></li>
+                <li><a href="janta.html#mqf"target="_black">misto quente</a></li>
+                <li><a href="janta.html#mlc"target="_black">MACARRÃO COM LINGUIÇA CALABRESA </a></li>
+                <li><a href="janta.html#bf"target="_black">batata com frios</a></li>
+                <li><a href="janta.html#lfa"target="_black">lanche de frango</a></li>
+                <li><a href="janta.html#og"target="_black">Omelete de gorgonzola </a></li>
+                <li><a href="janta.html#scg"target="_black">Suflê de cenoura com gorgonzola </a></li>
+                <li><a href="janta.html#ffl"target="_black">Filé de Frango com Molho de Laranja </a></li>
+               
+                <li><a href="saldavel.html#tf"target="_black">Travessa de frutas</a></li>
+                <li><a href="saldavel.html#sha"target="_black"> Suco de Abacaxi com Hortelã </a></li>
+                <li><a href="saldavel.html#pizzaff"target="_black">pizza light </a></li>
+                <li><a href="saldavel.html#tfl"target="_black">Torta fria de legumes </a></li>
+                <li><a href="saldavel.html#pfc"target="_black">Panqueca Fitness </a></li>
+                <li><a href="saldavel.html#pizzaligth"target="_black">pizza frango low</a></li>
+                <li><a href="saldavel.html#tcq"target="_black">Tirinhas de couve-flor com queijo </a></li>
+                <li><a href="saldavel.html#sm"target="_black">SALADÃO Com MOLHO </a></li>
+                <li><a href="saldavel.html#sl"target="_black">SUFLÊ DE LEGUMES </a></li>
+                <li><a href="saldavel.html#ap"target="_black">arroz-primavera </a></li>
+                
+                <li><a href="paginas-sec/homen.html#h1"target="_black">hiper calórico</a></li>
+                <li><a href="paginas-sec/homen.html#h2"target="_black">hiper calorico WHEY</a></li>
+                <li><a href="paginas-sec/homen.html#ab"target="_black">abumina</a></li>
+                <li><a href="paginas-sec/homen.html#br"target="_black">barra de Proteína</a></li>
+                <li><a href="paginas-sec/homen.html#wp"target="_black">wey protein</a></li>
+                <li><a href="paginas-sec/homen.html#vpa"target="_black">vitamina de amedoin fit</a></li>
+                <li><a href="paginas-sec/homen.html#vfb"target="_black">escondidinho batata e frango fit</a></li>
+                
+                <li><a href="paginas-sec/pizza.html#pc"target="_black">pizza calabresa</a></li>
+                <li><a href="paginas-sec/pizza.html#pp"target="_black">pizza portuguesa</a></li>
+                <li><a href="paginas-sec/pizza.html#pf"target="_black">pizza frango</a></li>
+                <li><a href="paginas-sec/pizza.html#pm"target="_black">pizza mangueta</a></li>
+                <li><a href="paginas-sec/pizza.html#pn"target="_black">pizza napolitana</a></li>
+                <li><a href="paginas-sec/pizza.html#pb"target="_black">pizza bordas recheada</a></li>
+                <li><a href="paginas-sec/pizza.html#qb"target="_black">quibe queijo</a></li>
+                <li><a href="paginas-sec/pizza.html#pl"target="_black">pizza liquidificado</a></li>
+                <li><a href="paginas-sec/pizza.html#mp"target="_black">pizza mini</a></li>
+                <li><a href="paginas-sec/pizza.html#pff"target="_black">pizza facil</a></li>
+                <li><a href="paginas-sec/pizza.html#pbr"target="_black">pizza brigadeiro</a></li>
+                
+                <li><a href="paginas-sec/restaurante.html#mcb"target="_black">macarrao com bacon</a></li>
+                <li><a href="paginas-sec/restaurante.html#cg"target="_black">churas grego</a></li>
+                <li><a href="paginas-sec/restaurante.html#cb"target="_black">camarao e brocoles</a></li>
+                <li><a href="paginas-sec/restaurante.html#af"target="_black">Arroz de forno</a></li>
+                <li><a href="paginas-sec/restaurante.html#fc"target="_black">batata calabresa</a></li>
+                <li><a href="paginas-sec/restaurante.html#cm"target="_black">costela com mandioca</a></li>
+                <li><a href="paginas-sec/restaurante.html#mcb"target="_black">macarrão creme de batata</a></li>
+                <li><a href="paginas-sec/restaurante.html#fx"target="_black">frango xadrez</a></li>
+                <li><a href="paginas-sec/restaurante.html#rf"target="_black">risoto frango </a></li>
+                <li><a href="paginas-sec/restaurante.html#s"target="_black">salpicao</a></li>
+                
+                <li><a href="paginas-sec/lanchonete.html#h"target="_black">hambúrguer</a></li>
+                <li><a href="paginas-sec/lanchonete.html#ec"target="_black">esfiha de carne</a></li>
+                <li><a href="paginas-sec/lanchonete.html#cf"target="_black">coxinha de frango</a></li>
+                <li><a href="paginas-sec/lanchonete.html#sc"target="_black">sanduiche de calabresa</a></li>
+                <li><a href="paginas-sec/lanchonete.html#jl"target="_black">Joelho de Lanchonete</a></li>
+                <li><a href="paginas-sec/lanchonete.html#rm"target="_black">risote de milho</a></li>
+                <li><a href="paginas-sec/lanchonete.html#mp"target="_black">mini pizza</a></li>
+                <li><a href="paginas-sec/lanchonete.html#tfr"target="_black">Torta cremosa de frango, milho e requeijão</a></li>
+                <li><a href="paginas-sec/lanchonete.html#ps"target="_black">panqueca</a></li>
+                
+                <li><a href="paginas-sec/padaria.html#pq"target="_black">pao de queijo</a></li>
+                <li><a href="paginas-sec/padaria.html#s"target="_black">sonho</a></li>
+                <li><a href="paginas-sec/padaria.html#bt"target="_black">biscoito toalha</a></li>
+                <li><a href="paginas-sec/padaria.html#pf"target="_black">pao frances</a></li>
+                <li><a href="paginas-sec/padaria.html#cv"target="_black">cueca-virada</a></li>
+                <li><a href="paginas-sec/padaria.html#pln"target="_black">pao leite ninho</a></li>
+                <li><a href="paginas-sec/padaria.html#pz"target="_black">pao pizza</a></li>
+                <li><a href="paginas-sec/padaria.html#bb"target="_black">bolinho Bacalhau</a></li>
+                <li><a href="paginas-sec/padaria.html#epq"target="_black">escondidinho presunto queijo</a></li>
+                <li><a href="paginas-sec/padaria.html#pbl"target="_black">Pãozinho de Batata no liquidificador </a></li>
+                <li><a href="paginas-sec/padaria.html#plc"target="_black">Pão de leite condensado </a></li>
+                <li><a href="paginas-sec/padaria.html#paop"target="_black">Pão pizza</a></li>
+               
+                <li><a href="paginas-sec/bar.html#cc"target="_black">cerveja caseira</a></li>
+                <li><a href="paginas-sec/bar.html#ac"target="_black">amarula</a></li>
+                <li><a href="paginas-sec/bar.html#bf"target="_black">batida de frutas</a></li>
+                <li><a href="paginas-sec/bar.html#gm"target="_black">gimule</a></li>
+                <li><a href="paginas-sec/bar.html#vq"target="_black">vinho-quente</a></li>
+                <li><a href="paginas-sec/bar.html#bv"target="_black">Black Velvet </a></li>
+                <li><a href="paginas-sec/bar.html#m"target="_black">mimosa</a></li>
+                <li><a href="paginas-sec/bar.html#c"target="_black">Caipirinha</a></li>
+                <li><a href="paginas-sec/bar.html#mtt"target="_black"> Manhattan </a></li>
+                <li><a href="paginas-sec/bar.html#cum"target="_black">Cucumber Martin </a></li>
+    
+                <li><a href="paginas-sec/medicina.html#vmc"target="_black">Vitamina termogênica de mamão com canela </a></li>
+                <li><a href="paginas-sec/medicina.html#ca"target="_black">cha de amora  </a></li>
+                <li><a href="paginas-sec/medicina.html#cs"target="_black">Creme de shitake </a></li>
+                <li><a href="paginas-sec/medicina.html#tr"target="_black">tomate recheado </a></li>
+                <li><a href="paginas-sec/medicina.html#par"target="_black">Patê de alho com ricota </a></li>
+                <li><a href="paginas-sec/medicina.html#sai"target="_black">Suco anti-inflamatório  </a></li> 
+                <li><a href="paginas-sec/medicina.html#bf"target="_black">brocoles Forno </a></li>
+    
+                <li><a href="paginas-sec/kanabis.html#b"target="_black">brisadeiro</a></li>
+                <li><a href="paginas-sec/kanabis.html#pc"target="_black">pizza canabica</a></li>
+                <li><a href="paginas-sec/kanabis.html#bc"target="_black">cookie canabico</a></li>
+                <li><a href="paginas-sec/kanabis.html#bm"target="_black">bolonha</a></li>
+    
+                <li><a href="paginas-sec/bolo.html#bc"target="_black">bolo casamento</a></li>
+                <li><a href="paginas-sec/bolo.html#rc"target="_black">rocabole de chocolate</a></li>
+                <li><a href="paginas-sec/bolo.html#ba"target="_black">bolo de aniversario</a></li>
+                <li><a href="paginas-sec/bolo.html#bbl"target="_black">bolo de banana light</a></li>
+                <li><a href="paginas-sec/bolo.html#bcc"target="_black">bolo de cenoura</a></li>
+                <li><a href="paginas-sec/bolo.html#bl"target="_black">bolo de limao</a></li>
+                <li><a href="paginas-sec/bolo.html#bln"target="_black">bolo de leite ninho</a></li>
+                <li><a href="paginas-sec/bolo.html#cdr"target="_black">Bolo de Chocolate Dois Recheios </a></li>
+                <li><a href="paginas-sec/bolo.html#bn"target="_black">bolo de nozes</a></li>
+                <li><a href="paginas-sec/bolo.html#tm"target="_black">Bolo Trifle de Morango  </a></li>
+    
+                <li><a href="paginas-sec/festas.html#tm"target="_black">torta de morango</a></li>
+                <li><a href="paginas-sec/festas.html#cs"target="_black">cavaquinhos Salgado</a></li>
+                <li><a href="paginas-sec/festas.html#sfc"target="_black">Risóles de Frango Com Catupiry </a></li>
+                <li><a href="paginas-sec/festas.html#pfr"target="_black">Pão Recheado com Frango e Requeijão </a></li>
+                <li><a href="paginas-sec/festas.html#bbc"target="_black">Bolinho de batata com carne moída </a></li>
+                <li><a href="paginas-sec/festas.html#brbc"target="_black">BRIGADEIRO RECHEADO COM BOLO DE CENOURA</a></li>
+                <li><a href="paginas-sec/festas.html#bcc"target="_black">BOLO DE CENOURA COM CATUPIRY</a></li>
+                <li><a href="paginas-sec/festas.html#bs"target="_black">BOLO salgado</a></li>
+                <li><a href="paginas-sec/festas.html#bg"target="_black">jujuba</a></li>
+                <li><a href="paginas-sec/festas.html#bdc"target="_black">brigadeiro de churros</a></li>
+    
+            </div>
+    
+        </ul>
+              
+                    
+                
+                
+                       
+    
+       
+        
+        </div></nav>	 
+        <div class="facel">
+            <a href="https://www.facebook.com/Cooking-receitas-1773648966193302" target="_black"><img src="imlink/facebook.png" alt=""></a>
+        </div>
+       </nav>
+
+</header>
+
+      
+
+
+
+
+
+
+
+
+
+      <section>
+
+     <a name="va">  <h1> VITAMINA DE AMENDOIM</h1></a>
+
+       <div class="div">
+        <div class="zoom">
+<img class="i4" src="img/rece/lanche/Vitamina amedoim1.jpg" alt=""><br>
+</div>
+<div class="zoom">
+<img class="i4" src="img/rece/lanche/Vitamina amedoim2.jpg" alt="">
+
+</div></div>
+       
+        
+       <audio src="audio/lanche/VITAMINA DE AMENDOIM.mp3" controls></audio>
+
+
+
+       <ol> Tempo de Preparo</ol>
+
+       <li> 20 minutos</li>
+
+       <li> Porções<br>
+        10</li>
+        <li>Gramas por Porção<br>
+        140 g</li>
+            
+       <ol> Ingredientes  vitamina de amendoim</ol>
+
+       <li> - 100,0 mililitros de Leite desnatado Parmalat</li>
+    <li>    - 300,0 gramas de Amendoim torrado</li>
+ <li>       - 4,0 colheres (sopa) de Açúcar refinado União</li>
+<li>        * Esta receita pode conter sugestões de marcas somente para referência para o cálculo das informações nutricionais. Fique à vontade para escolher o produto do fornecedor ou fabricante que você preferir.</li>
+<ol>        Como fazer vitamina de amendoim</ol>
+       <li> Torrar o amendoim e moer</li>
+    <li>   Acrescentar açúcar e levar aofogo por alguns minutos,
+     mexendo sempre.</li>
+     <li> Bater o amendoim junto com o leite no liquidificador.</li>
+     <li> Se preferir, pode peneirar antes de lever ao congelador</li>
+        
+        <h2>
+        Informações Nutricionais de vitamina de amendoim<br>
+       <span> Gramas por Porção: 140 g</span></h2>
+        
+       <ol> Calorias</ol>
+<li>        251,70 kcal</li>
+  <li>      Carboidratos</li>
+    <li>   19,91 g</li>
+        <li>   Proteínas</li>
+            <li>   9,90 g</li>
+                <li>  Gorduras Totais</li>
+                    <li>  16,20 g</li>
+                        <li> Gord. Saturadas</li>
+                            <li> 2,91 g</li>
+                                <li> Gord. Trans</li>
+                                    <li>  0,00 g</li>
+                                        <li>  Fibras</li>
+                                            <li>  2,34 g</li>
+                                                <li>  Sódio</li>
+                                                    <li>  184,30 mg</li>
+
+
+      </section>
+    <section>
+
+
+    <a name="bpm">  <h1>  BOLO PÉ DE MOLEQUE</h1></a>
+
+      <div class="div">
+        <div class="zoom">
+<img class="i4" src="img/rece/lanche/pedemoloque1.jpg" alt=""><br>
+</div>
+<div class="zoom">
+<img class="i4" src="img/rece/lanche/pedemoloque2.jpg" alt="">
+
+</div></div>
+       
+        
+       <audio src="audio/lanche/BOLO PÉ DE MOLEQUE.mp3" controls></audio>
+
+
+<ol>      Ingredientes</ol>
+
+<li>500g de massa de mandioca lavada</li>
+<li>200ml de leite de coco</li>
+<li>4 ovos</li>
+<li>100g de manteiga</li>
+<li>300g de açúcar</li>
+<li>1 pitada de sal</li>
+<li>150g de castanha de caju torrada e moída</li>
+<li>150g de amendoim torrado e moído</li>
+<li>1 colher de chá erva doce</li>
+<li>1 colher de chá de cravo da índia em pó</li>
+<li>1 colher de sopa de fermento em pó</li>
+<li>100g de castanhas de caju torradas inteiras</li>
+<ol>Modo de Fazer</ol>
+
+<li>Misture a massa de mandioca com o leite de coco e passe por uma peneira fina</li>
+<li> acrescente os ovos, a manteiga na temperatura ambiente, o açúcar e o sal, mexa com uma colher de pau até formar uma massa lisa e homogênea.</li>
+<li> Acrescente a castanha de caju torrada e moída, o amendoim torrado e moído, a erva doce, o cravo da índia em pó e por fim o fermento em pó, mexa delicadamente misturando tudo por completo, sem bater.</li>
+<li> Coloque a massa em uma forma redonda de buraco no centro de 23cm de diâmetro untada e enfarinhada e leve para assar em forno pré-aquecido a 180° por cerca de 40 minutos ou até que, fazendo o teste do palito, espetando o palito no centro do bolo, ele fique limpo e seco, decore com castanhas de caju torradas e inteiras.</li>
+<li> Rendimento aproximado de porções para 8 pessoas.</li>
+
+    </section>
+
+<section>
+  <a name="paor"> <h1> Pão Recheado delicioso </h1></a>
+
+   <div class="div">
+    <div class="zoom">
+<img class="i4" src="img/rece/lanche/receita-de-pao-recheado-delicioso1.jpg" alt=""><br>
+</div>
+<div class="zoom">
+<img class="i4" src="img/rece/lanche/pao-recheado2.jpg" alt="">
+
+</div></div>
+   
+    
+   <audio src="audio/lanche/Pão Recheado delicioso.mp3" controls></audio>
+
+
+  <ol> INGREDIENTES</ol>
+<ol>   Massa</ol>
+   
+   <li>1 kg de farinha de trigo</li>
+<li>   2 copos de leite morno</li>
+<li>   1 copo de óleo</li>
+<li>   1 colher (sopa) de fermento</li>
+<li>   sal a gosto</li>
+    
+<ol>   Recheio</ol>
+   
+<li>   250 g de presunto</li>
+<li>   250 g de mussarela</li>
+<li>   molho de tomate</li>
+<li>   requeijão</li>
+<li>   orégano</li>
+
+
+
+
+ <ol>MODO DE PREPARO </ol>
+
+<li>Em um recipiente, misture o leite, o óleo, o fermento, o sal e um pouco de farinha.</li>
+<li>Acrescente mais farinha aos poucos, misturando sempre até que a massa solte das mãos.</li>
+<li>Deixe a massa descansar por 15 minutos.</li>
+<li>Divida a massa e abra uma das partes em uma superfície limpa e seca.</li>
+<li>Despeje uma camada de molho de tomate, cubra com presunto, mussarela, requeijão e orégano.</li>
+<li>Dobre as beiradas da massa e enrole como um rocambole.</li>
+<li>Faça o mesmo com a outra parte da massa.</li>
+<li>Leve ao forno médio (180 °C), preaquecido, por cerca de 20 minutos.</li>
+<li>Dica: Os 2 pães servem aproximadamente 8 pessoas</li>
+
+</section>
+
+
+<section>
+   <a name="thd"> <h1> Torta de Cachorro-Quente de Forno</h1></a>
+
+    <div class="div">
+        <div class="zoom">
+    <img class="i4" src="img/rece/lanche/torthotdog1.jpg" alt=""><br>
+    </div>
+    <div class="zoom">
+    <img class="i4" src="img/rece/lanche/torthotdog2.jpg" alt="">
+    
+    </div></div>
+       
+        
+       <audio src="audio/lanche/Torta de Cachorro-Quente de Forno.mp3" controls></audio>
+
+
+
+
+    <ol>Ingredientes</ol>
+
+    <ol> Para a massa</ol>
+
+    <li> 1½ xícaras de leite (360 mililitros)</li>
+<li>     1 xícara de óleo (240 mililitros)</li>
+<li>    2 unidades de ovo</li>
+<li>    3 xícaras de farinha de trigo (420 gramas)</li>
+<li>     ½ xícara de queijo ralado</li>
+<li>     ½ unidade de cebola</li>
+<li>    1 colher de sopa de fermento para bolo</li>
+    <ol> Para o recheio</ol>
+
+    <li> 8 unidades de salsicha</li>
+    <li> ½ pacote de molho de tomate</li>
+    <li> ½ tablete de caldo de galinha</li>
+    <li> 1 colher de café de colorau</li>
+    <li> tomate e cebola a gosto</li>
+    <li> cheiro verde e orégano a gosto</li>
+    <ol> Modo de Preparo </ol>
+
+    <li> Para fazer esta receita de torta salgada de cachorro primeiramente comece pelo recheio, para depois poder esfriar.</li>
+    <li> Refogue a cebola até murchar, depois adicione o colorau, o caldo de galinha e o tomate, refogue por mais 2 minutos.</li>
+<li> Para continuar preparando este molho de cachorro quente adicione o molho de tomate e meio copo de água, deixe ferver até reduzir.</li>
+<li>  Ferva as salsichas já picadas em rodelas por 1 minuto em água fervente, coe e adicione no molho. Misture bem.</li>
+<li>   Finalize o molho com cheiro verde, desligue e deixe esfriar enquanto prepara os passos seguintes.</li>
+<li> Para fazer a massa desta torta salgada bata primeiro os ovos, o leite, o óleo e a cebola por 3 minutos no liquidificador.</li>
+<li>Adicione a farinha com o queijo ralado e, por último, o fermento.</li>
+<li> Depois de bater a massa deverá ficar bem lisinha, sem grumos de farinha.</li>
+   
+<li><span>Dica:</span> Ajude o liquidificador com uma colher, pois a massa é bastante densa.</li>
+    <li> Para montar a torta de cachorro quente em uma forma untada adicione metade da massa e espalhe o recheio.</li>
+    <li> Cubra com a outra metade de massa e polvilhe orégano por cima.</li>
+    <li> Leve ao forno pré aquecido a 180ºC por 30 minutos, ou até observar que a massa está cozinhada.</li>
+    <li> Sua torta de cachorro quente de forno está pronta!</li>
+    
+
+
+</section>
+
+
+<section>
+
+  <a name="ef"> <h1> Empadão de Frango Cremoso</h1></a>
+
+   <div class="div">
+    <div class="zoom">
+<img class="i4" src="img/rece/lanche/empadao-frango-1.jpg" alt=""><br>
+</div>
+<div class="zoom">
+<img class="i4" src="img/rece/lanche/empadao-frango-2.jpg" alt="">
+
+</div></div>
+   
+    
+   <audio src="audio/lanche/Empadão de Frango Cremoso.mp3" controls></audio>
+
+
+
+
+   <ol> INGREDIENTES</ol>
+
+   <ol> Para a massa</ol>
+
+    <li> 250 gramas de farinha de trigo</li>
+    <li> 100 gramas de manteiga sem sal</li>
+    <li> 55 ml de água gelada</li>
+    <li> 1 pitada generosa de sal</li>
+    
+    <ol>Para o recheio</ol>
+    <li> 1 peito de frango cozido e desfiado</li>
+    <li> 400 ml de molho de tomate açúcar</li>
+    <li> 1 cebola grande</li>
+    <li> 2 dentes de alho</li>
+    <li> 200 gramas de requeijão</li>
+    <li> Salsinha picada a gosto</li>
+    <li> 1 pitada de sal</li>
+    <li> 1 lata de milho</li>
+<ol>modo de fazer</ol>
+
+    <li>Misture todos os ingredientes até ficar uma massa bem uniforme e que não grude nas mãos.
+     Reserve na geladeira.</li>
+
+
+    <li>Em uma panela, coloque o alho e a cebola picados e deixe dourar em fogo baixo.</li>
+    <li> Acrescente o molho de tomate e o requeijão e misture bem.</li>
+    <li> Adicione o frango, o sal, a salsinha e o milho e misture tudo muito bem. 
+    Deixe esfriar. </li>
+
+    <ol>MONTAGEM</ol>
+  <li>  Separe a massa em duas partes.</li>
+  <li> Jogue farinha na bancada e abra uma das partes da massa com a ajuda de um rolo.</li>
+  <li> Coloque essa massa em uma forma de fundo removível, apertando bem o meio e as laterais.</li>
+
+  <li>  Coloque o recheio e, por cima, adicione 4 colheres de sopa de requeijão.</li>
+
+    <li>Abra o outro pedaço de massa e cubra todo o empadão.</li> 
+    <li> Pincele uma gema por cima e deixe assar em forno pré-aquecido a 180ºC por aproximadamente 40 minutos.</li>
+    
+
+</section>
+
+<section>
+
+  <a name="pcl"> <h1> Pãozinho de Cebola de liquidificador </h1></a>
+
+   <div class="div">
+    <div class="zoom">
+<img class="i4" src="img/rece/lanche/pão-de-cebola-de-liquidificador-1.jpg" alt=""><br>
+</div>
+<div class="zoom">
+<img class="i4" src="img/rece/lanche/pao-cebola2.jpg" alt="">
+
+</div></div>
+   
+    
+   <audio src="audio/lanche/Pãozinho de Cebola de liquidificador.mp3" controls></audio>
+
+
+
+
+    <ol> Ingredientes</ol>
+
+    <li>2 ovos</li>
+   <li> 1 cebola grande picada</li>
+<li>    ½ xícara (chá) de óleo</li>
+   <li> 1 xícara (chá) de leite morno desnatado</li>
+<li>    2 tabletes de fermento biológico</li>
+ <li>   6 xícaras (chá) de farinha de trigo</li>
+<li>    2 colheres (chá) de sal</li>
+<li>    1 gema batida com ½ xícara de café coado</li>
+<li>    Orégano a gosto</li>
+    
+<ol> Modo de Preparo</ol>
+
+<li>    Coloque no liquidificador os ovos, a cebola, o óleo, o sal e bata até que se forme uma mistura bem homogênea.</li>
+<li> Coloque o trigo em uma bacia e derrame a mistura do liquidificador por cima.</li>
+<li>    Dissolva o fermento no leite morno e coloque dentro da bacia.</li>
+<li> Amasse essa massa até que fique bem homogênea e solta das mãos.</li>
+<li> Coloque essa massa para descansar por 1 hora.</li>
+<li>    Unte uma forma com manteiga,</li>
+<li> faça pãezinhos e coloque um pouco distante um do outro passe a gema com o café por cima deles e salpique orégano deixe eles crescerem dentro da forma por mais 20 minutos e leve para assar em forno bem quente até que fiquem bem dourado.</li>
+    
+
+</section>
+
+<section>
+
+  <a name="sf"> <h1> SANDUÍCHE DE FORNO </h1></a>
+
+   <div class="div">
+    <div class="zoom">
+<img class="i4" src="img/rece/lanche/saduicheforno1.jpg" alt=""><br>
+</div>
+<div class="zoom">
+<img class="i4" src="img/rece/lanche/saduicheforno2.jpg" alt="">
+
+</div></div>
+   
+    
+   <audio src="audio/lanche/SANDUÍCHE DE FORNO.mp3" controls></audio>
+
+
+
+   <ol> INGREDIENTES</ol>
+
+   <ol> manteiga para untar.</ol>
+
+   <li> 1 pacote de pão de forma.</li>
+ <li>   1 copo de requeijão.</li>
+<li>    200 g de queijo prato.</li>
+<li>    200 g de queijo mussarela.</li>
+<li>    200 g de presunto.</li>
+<li>    1/2 copo de leite.</li>
+<li>    tomate em rodela (opcional).</li>
+<li>    orégano.</li>
+
+<ol>    MODO DE PREPARO</ol>
+
+   <li> Unte o refratário com manteiga, acrescente uma camada com pão de forma e cubra com requeijão.</li>
+<li>    Em seguida, coloque uma camada de queijo prato, uma de presunto e mais uma de mussarela.</li>
+<li>    Acrescente mais uma camada de pão, requeijão, os queijos e o presunto, o tomate e os temperos.</li>
+<li>    Por fim, adicione mais uma camada de pão e, sobre esta última camada, coloque o queijo mussarela e o orégano.</li>
+<li>    Espalhe o leite nas laterais do sanduíche (com o auxílio de uma colher) e leve ao forno até dourar (10 minutos) ....</li>
+    
+
+
+</section>
+
+<section>
+
+   <a name="jpz"> <h1>Joelho de Pizza maravilhoso </h1></a>
+
+    <div class="div">
+        <div class="zoom">
+    <img class="i4" src="img/rece/lanche/joelhopizza1.jpg" alt=""><br>
+    </div>
+    <div class="zoom">
+    <img class="i4" src="img/rece/lanche/joelhopizza2.jpg" alt="">
+    
+    </div></div>
+       
+        
+       <audio src="audio/lanche/Joelho de Pizza maravilhoso.mp3" controls></audio>
+
+
+
+
+
+     <ol>Ingredientes</ol>
+
+    <li>1 kg de farinha de trigo</li>
+   <li> 100 ml de óleo</li>
+<li>    1 copo de leite</li>
+<li>    1 copo de água</li>
+<li>    1 ovo</li>
+<li>    1 colher (sopa) de sal</li>
+<li>    2 colheres (sopa) de açúcar</li>
+ <li>   2 pacotinhos de fermento de 15 g cada</li>
+    <ol> Modo de preparo</ol>
+    <li> Bata no liquidificador todos os ingredientes e jogue em cima da farinha, misture bem e depois sove.</li>
+    <li> Para sovar a massa pode-se jogar para cima e deixar cair na mesa.</li>
+    <li> Depois da massa crescida, divida em 4 pedaços iguais, abra cada um destes pedaços, com o rolo e corte em 9 partes.</li>
+<li>     Coloque uma fatia de presunto, outra de queijo mussarela e enrole o pãozinho.</li>
+<li>     Depois pode ser pincelado com gema de ovo ou mesmo café adoçado e coloque orégano em cima.</li>
+<li> Deixe crescer novamente e leve para assar à 200°.</li>
+    
+
+
+</section>
+
+
+<section>
+
+  <a name="bbt"> <h1> Bombom de travessa delicioso!!</h1></a>
+
+   <div class="div">
+    <div class="zoom">
+<img class="i4" src="img/rece/lanche/bombom-de-travessa1.jpg" alt=""><br>
+</div>
+<div class="zoom">
+<img class="i4" src="img/rece/lanche/bombom-de-travessa2.jpg" alt="">
+
+</div></div>
+   
+    
+   <audio src="audio/lanche/Bombom de travessa delicioso!!.mp3" controls></audio>
+
+
+
+   <ol> Ingredientes</ol>
+
+   <li> 2 latas de leite condensado</li>
+<li>    1 colher de sopa de margarina</li>
+<li>    1 colher de sopa de amido de milho</li>
+<li>    3 caixas de creme de leite</li>
+<li>    400 gr de morangos (reserve alguns para decoração)</li>
+<li>    400 gr de chocolate ao leite picado</li>
+
+<ol>    Modo de preparar o brigadeiro branco:</ol>
+<li>    Levar ao fogo leite condensado, amido de milho e margarina</li>
+<li>    Mexer até engrossar desligar o fogo e</li>
+<li>    colocar 1 caixinha de creme de leite e misturar</li>
+  <li>  Colocar em um refratário</li>
+<li>    Leve à geladeira para esfriar</li>
+
+<ol>Morangos</ol>
+
+<li>Lavar e secar bem os morangos</li>
+<li>    Cortar ao meio e colocar no refratário em cima do brigadeiro branco</li>
+
+<ol>    Chocolate ao leite</ol>
+
+<li>    Colocar o chocolate em um refratário e derreter em banho maria ou microondas</li>
+<li>    Misturar bem até derreter o chocolate por completo</li>
+<li>    Colocar 1 caixinha de creme de leite e misturar (o chocolate vai endurecer)</li>
+<li>    Colocar a outra caixinha de creme de leite e misturar e novamente (o chocolate vai ficar cremoso)</li>
+<li>    Coloque o chocolate em cima dos morangos</li>
+<li>    Decore com os morangos reservados</li>
+<li>    Leve à geladeira para gelar</li>
+<li>    Aprecie essa maravilha!!</li>
+    
+    
+     
+    
+
+
+</section>
+
+
+
+
+
+
+    <section>
+
+
+      <a name="bca">  <h1>BOLO CREMOSO DE AMENDOIM</h1></a>
+
+        <div class="div">
+            <div class="zoom">
+    <img class="i4" src="img/rece/lanche/bolo-cremoso-amendoim1.jpg" alt=""><br>
+    </div>
+    <div class="zoom">
+    <img class="i4" src="img/rece/lanche/bolo-cremoso-amendoim2.jpg" alt="">
+    
+    </div></div>
+           
+            
+           <audio src="audio/lanche/BOLO CREMOSO DE AMENDOIM.mp3" controls></audio>
+    
+
+
+
+
+        <ol>Ingredientes</ol>
+
+       <li> 200ml de leite</li>
+       <li> 4 ovos</li>
+       <li> 100g de açúcar</li>
+<li>        1 pitada de sal</li>
+<li>        200g de creme de amendoim</li>
+<li>        100g de farinha de trigo peneirada</li>
+<li>        100g de farinha de rosca</li>
+<li>        1 colher de sopa de fermento em pó</li>
+<li>        1 lata de leite condensado</li>
+<li>        200ml de creme de leite</li>
+<ol>        Modo de Fazer</ol>
+<li>        No liquidificador bata o leite, os ovos, o açúcar, o sal e a metade do creme de amendoim.</li>
+<li> Peneire e misture em outro recipiente a farinha de trigo com o fermento em pó, misture a farinha de rosca, vá intercalando aos poucos</li>
+<li> em outro recipiente a mistura da farinha com o líquido do liquidificador, misture muito bem, sem bater. </li>
+<li>Coloque em uma forma de furo central de 20cm de diâmetro untada e enfarinhada.</li>
+<li> Leve para assar em forno pré-aquecido a 180° por cerca de 40 minutos ou até que, enfiando um palito no centro do bolo, ele saia limpo,</li>
+<li> retire do forno, deixe esfriar e desenforme. </li>
+<li>Em outro recipiente misture muito bem o creme de amendoim restante, o leite condensado e o creme de leite.</li>
+<li> Cubra o bolo, salpique amendoim moído e sirva a seguir.</li>
+<li> Rendimento aproximado de porções para 8 pessoas.</li>
+        
+
+    </section>
+
+    <footer style="border: 1px solid rgb(233, 45, 45);width: 100%; height: 100px; border-radius: 1px;background-color: #6d3180;">
+    
+  
+    
+        <div id="d1" style="padding: 30px; padding-left:20px;" >
+                
+            <a   class="btmenu" href="index.html"  >inicio</a>
+        <a class="btmenu" href="" target="">sobre</a>
+        <a class="btmenu" href="">afiliados</a>
+        <a class="btmenu" href="">trabalhe com nosco</a>
+        
+    
+     
+     </div>
+    </footer>
+
+   </body>
+   </html>

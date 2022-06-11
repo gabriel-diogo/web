@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="paginas-sec/all.css">
+    <script src="all.js"></script>
+    <script src="https://kit.fontawesome.com/c1633bff86.js" crossorigin="anonymous"></script> 
+
+    
+    <style>
+        body{
+            background-image: url('img/fun.jpg');
+            background-size: cover;
+            
+        }
+               .conten{
+          background-color: transparent;
+          border-color: turquoise;
+          padding: 5px;
+          font-weight: bold;
+          font-size: 20px;
+          margin-bottom: 270px;
+          border-radius: 4px;
+          cursor: pointer;
+          
+          transition: 0.5s;
+          width: 300px;
+           
+            
+            
+            
+            
+           
+           
+
+        }
+        .card{
+background-color: darkorchid;
+padding: 10px;
+box-shadow: 3px 3px 1px #00000080;
+
+
+}
+.conten h1{
+    text-align: center;
+    color: #01f151;
+    font-size: 30px;
+    font-weight: bold;
+}
+.conten input{
+    width: 50px;
+    height: 30px;
+    padding: 5px 5px;
+    border: 0px;
+    border-bottom: 2px solid #e724de;
+}
+.label-float input{
+    width: 50%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0px;
+    border-bottom: 2px solid #000000;
+    background-color: rgb(208, 205, 211);
+    outline: none;
+    min-width: 180px;
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+    border-radius: 0px;
+    align-items: center;
+    
+}
+.conten label{
+    color: #5dee1a;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.conten button{
+    align-items: center;
+    margin-left: 10%;
+}
+mos{
+    width: 200px;
+    border-radius: 0px 0px 15px 15px;
+    margin-left: 40px;
+    
+    
+}
+
+#faf{
+    margin-left: 200px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#mero{
+text-align: center;
+    color:#1eff00;
+    background-color:#bbf1ff; 
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+#msu{
+    text-align: center;
+    color:#ff0000;
+    background-color:#bbffbb; 
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+
+}
+.n4{
+    border-radius: 50%;
+}
+#fic{
+         width: 50px;
+            height: 50px;
+     }
+     .card{
+background-color: darkorchid;
+padding: 10px;
+
+box-shadow: 3px 3px 1px #00000080;
+background-image: linear-gradient(#611561, #db1adb, #682768);
+}
+
+    </style>
+
+</head>
+
+<body>
+    <script>
+        function mos(){
+            if(document.getElementsByClassName("conten")[0].style.display=="none"){
+                document.getElementsByClassName("conten")[0].style.display="block";
+               }else{
+                document.getElementsByClassName("conten")[0].style.display="none";
+               }}
+ 
+ 
+          //mostrar senha
+             function ms(){
+                 var senha = document.getElementById("pass");
+                 if(senha.type == "password"){
+                     senha.type = "text";
+                 }else{
+                     senha.type = "password";
+                 }   
+             }
+             function mss(){
+                 var senha = document.getElementById("passs");
+                 if(senha.type == "password"){
+                     senha.type = "text";
+                 }else{
+                     senha.type = "password";
+                 }   
+             }
+
+  //cadastro
+        var vauser=false;
+var vanome=false;
+
+var valsenha=false;
+
+var valcsenha=false; 
+
+
+
+            
+             function ero(){
+                let nome = document.getElementById("nome")
+                let lnome=document.getElementById("lnome")
+                let luser=document.getElementById("luser")
+                let user=document.getElementById("user")
+                let lsenha=document.getElementById("lsenha")
+                let senha=document.getElementById("pass")
+                let csenha=document.getElementById("passs")
+                let lcsenha=document.getElementById("lcsenha")
+
+                
+
+              
+
+
+
+
+
+
+
+                nome.addEventListener("keyup", function(){
+                    if(nome.value.length<=3){
+                        lnome.innerHTML="Nome muito curto"
+                        lnome.style.color="red"
+                        nome.setAttribute('style' , 'border-color: red;')
+                         vanome=false;
+                    }else{
+                        lnome.innerHTML="Nome "
+                        lnome.style.color="blue"
+                        nome.setAttribute('style' , 'border-color: blue;')
+                         vanome=true;
+                        
+                    }
+                });
+                    user.addEventListener("keyup", function(){
+                        if(user.value.length<=3){
+                            luser.innerHTML="Usuario muito curto"
+                            luser.style.color="red"
+                            user.setAttribute('style' , 'border-color: red;') 
+                            vauser=false;  
+                        }else{  
+                            luser.innerHTML="Usuario "
+                            luser.style.color="blue"
+                            user.setAttribute('style' , 'border-color: blue;')
+                            vauser=true;
+                            
+                        }
+                    });
+                    senha.addEventListener("keyup", function(){
+                        if(senha.value.length<=3){
+                            lsenha.innerHTML="Senha muito curta minimo 6"
+                            lsenha.style.color="red"
+                            senha.setAttribute('style' , 'border-color: red;')
+                            valsenha=false;
+                            
+                        }else{
+                            lsenha.innerHTML="Senha"
+                            lsenha.style.color="blue"
+                            senha.setAttribute('style' , 'border-color: blue;')
+                            valsenha=true;
+                            
+                        }
+                    });
+                    csenha.addEventListener("keyup", function(){
+                        if(senha.value!=csenha.value){
+                            lcsenha.innerHTML="invalida"
+                            lcsenha.style.color="red"
+                            csenha.setAttribute('style' , 'border-color: red;')
+                            valcsenha=false;
+                            
+                        }else{
+                            lcsenha.innerHTML="Confirmar Senha"
+                            lcsenha.style.color="blue"
+                            csenha.setAttribute('style' , 'border-color: blue;')
+                            valcsenha=true;
+                            
+                        }
+                    });
+  
+
+             }
+             window.onload=ero;
+
+             function cad(){
+              var mero=document.getElementById("mero");
+var msu=document.getElementById("msu");
+
+let nome = document.getElementById("nome")
+                let lnome=document.getElementById("lnome")
+                let luser=document.getElementById("luser")
+                let user=document.getElementById("user")
+                let lsenha=document.getElementById("lsenha")
+                let senha=document.getElementById("pass")
+                let csenha=document.getElementById("passs")
+                let lcsenha=document.getElementById("lcsenha")
+
+           
+                if(vanome==true && vauser==true && valsenha==true && valcsenha==true){
+                    
+                  
+
+
+                    
+
+                    let listetuser=JSON.parse(localStorage.getItem("usuarios")||"[]");
+                    listetuser.push({
+                        nome:nome.value,
+                        user:user.value,
+                        senha:senha.value
+                    });
+                 
+                    localStorage.setItem("usuarios",JSON.stringify(listetuser));
+
+                    listauser=JSON.parse(localStorage.getItem("usuarios"))
+
+                
+               
+                        
+                  
+                  
+                
+    
+                    mero.setAttribute('style' , 'display: block;');
+                    mero.innerHTML="Cadastrando usuario"
+                    msu.setAttribute('style' , 'display: none;');
+                    document.getElementById("nome").value="";
+
+                   
+                    setTimeout(function(){
+                        window.location.href="index.html";
+                    },3000);
+                    
+                    
+                }else{
+                    msu.setAttribute('style' , 'display: block;');
+                    msu.innerHTML="Preencha todos os campos"
+                    mero.setAttribute('style' , 'display: none;');
+                    mero.innerHTML="";
+                }
+            }
+    
+
+
+            
+
+     </script>
+     
+     <header class="menuh">
+        <main>
+        <div class="capecalho">
+        <div class="logo">
+            
+         <img class="n4" src="img/log.jpg" >
+        </div>
+        
+
+
+        
+   
+    
+      
+   
+    
+       
+       
+
+
+      
+           <div id="d1" class="mp" >
+            
+               <a class="bitmenu1" href="index.html">inicio</a>
+           <a class="btmenu" href="cafe.html" target="">café </a>
+           <a class="btmenu" href="almoco.html">almoço</a>
+           <a class="btmenu" href="lanche.html">lanche</a>
+           <a class="btmenu" href="janta.html">jantar</a>
+           <a class="btmenu" href="saldavel.html">saldável</a>
+          
+      
+        
+        </div>
+        <div>
+        <marquee behavior="alternate" loop="3"> <h1  style="color: yellowgreen;">welcome cooking recipes !!!</h1></marquee>
+        </div></div>
+    
+    </main></header>
+    <div class="conten" >
+        <div class="card">
+            <h1>cadastro</h1>
+            <br><br>
+            <div id="mero"></div><br>
+            <div id="msu"></div>
+            <br><br>
+            <div class="label-float">
+                <label id="lnome" for="nome">nome</label><br>
+                <input type="text"id="nome" placeholder="nome"  maxlength="40" required><br><br>
+                
+            </div>
+            <div class="label-float">
+                <label id="luser" for="usuario">usuario</label><br>
+                <input type="text"id="user" placeholder="usuario " maxlength="40" required><br><br>
+            <div class="label-float">
+                <label id="lsenha" for="senha">senha</label><br>
+                <i class="fa fa-eye" aria-hidden="true" onclick="ms()" id="faf"></i>
+                <input type="password" id="pass" placeholder="senha"  maxlength="40" required>
+                
+        </div><br>
+
+        <div class="label-float">
+            <label id="lcsenha" for="pass">confirma senha</label>
+            <i class="fa fa-eye" aria-hidden="true" onclick="mss()" id="faf"></i>
+            <input type="password" id="passs" placeholder="comfirma senha"  maxlength="40" required>
+            
+    </div><br>
+  
+    <div>
+        <button onclick="cad()" class="btmenu" id="btn-login">cadastro</button>
+    </div><br><br>
+    <div>
+        <a href="#" onclick="login()" id="logar()"><img id="fic" src="imlink/facebook.png" alt=""> </a>
+        <div id="status"></div>
+    </div>
+</main></header>
+
+</div>
+</body>
+</html>
